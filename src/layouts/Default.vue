@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <div class="min-h-full min-h-screen px-6">
     <slot />
   </div>
 </template>
@@ -14,10 +14,7 @@ query {
 
 <style>
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.5;
 }
 </style>

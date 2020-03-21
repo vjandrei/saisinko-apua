@@ -1,7 +1,16 @@
 module.exports = {
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+        white: "var(--color-white)"
+      }
+    },
+    fontFamily: {
+      display: ["Montserrat"]
+    }
   },
   variants: {},
-  plugins: [],
-}
+  plugins: [require("@tailwindcss/custom-forms")]
+};
