@@ -37,9 +37,7 @@
                   class="w-full sm:w-auto font-display font-semibold text-lg bg-primary text-white rounded-full py-2 px-6 "
                 >
                   Tilaa omaan naapurustoosi
-                  <span class="pl-3 w-4 h-4">
-                    <font-awesome-icon icon="arrow-right" size="fa-xs" />
-                  </span>
+                  <span class="pl-3 w-4 h-4"> </span>
                 </button>
               </div>
             </div>
@@ -166,9 +164,7 @@
                     class="font-display font-semibold text-lg bg-primary text-white rounded-full py-2 px-6 "
                   >
                     Lähetä lomake
-                    <span class="pl-3 w-4 h-4">
-                      <font-awesome-icon icon="arrow-right" size="fa-xs" />
-                    </span>
+                    <span class="pl-3 w-4 h-4"> </span>
                   </button>
                 </div>
               </form>
