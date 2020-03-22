@@ -154,7 +154,7 @@
                         class="form-checkbox"
                         id="suomi"
                         value="suomi"
-                        v-model="formData.language"
+                        v-model="formData.language.suomi"
                       />
                       <span class="ml-2">Suomi</span>
                     </label>
@@ -166,7 +166,7 @@
                         class="form-checkbox"
                         id="svenska"
                         value="svenska"
-                        v-model="formData.language"
+                        v-model="formData.language.svenska"
                       />
                       <span class="ml-2">Svenska</span>
                     </label>
@@ -178,7 +178,7 @@
                         class="form-checkbox"
                         id="english"
                         value="english"
-                        v-model="formData.language"
+                        v-model="formData.language.english"
                       />
                       <span class="ml-2">English</span>
                     </label>
