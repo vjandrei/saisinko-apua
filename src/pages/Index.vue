@@ -2,13 +2,17 @@
   <Layout>
     <section>
       <div class="container mx-auto">
-        <nav class="flex items-center justify-between my-6 py-6">
-          <div>
-            <a href>hackthecrisisfinland.com</a>
-          </div>
-          <div class="flex">
-            <a href class="mr-4">Tilauslomake</a>
-            <a href>Mistä on kyse?</a>
+        <nav class="my-8 py-8" role="navigation" aria-label="main navigation">
+          <div class="flex flex-col md:flex-row justify-between items-center mx-auto font-display">
+            <a href="/" class="font-semibold">hackthecrisisfinland.com</a>
+            <div class="mt-4 md:mt-0 hidden md:block">
+              <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
+                <a class="font-semibold relative nav-link">Tilauslomake</a>
+              </div>
+              <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
+                <a class="font-semibold relative nav-link">Mistä on kyse?</a>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
@@ -58,10 +62,20 @@
                   class="font-display font-extrabold text-2xl text-primary mb-4"
                 >Tilaa omaan taloyhtiöösi</h2>
               </div>
-              <form class="mt-8" name="contact" netlify>
+              {{ this.submitText }}
+              <form
+                class="mt-8"
+                name="contact"
+                method="post"
+                v-on:submit.prevent="handleSubmit"
+                action="/success/"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+              >
                 <label class="block mb-4">
                   <span class="font-display font-semibold text-primary">Nimesi</span>
                   <input
+                    v-model="formData.name"
                     aria-label="Nimesi"
                     name="name"
                     type="text"
@@ -74,6 +88,7 @@
                 <label class="block mb-4">
                   <span class="font-display font-semibold text-primary">Katuosoite</span>
                   <input
+                    v-model="formData.address"
                     aria-label="Katuosoite"
                     name="address"
                     type="text"
@@ -86,6 +101,7 @@
                 <label class="block mb-4">
                   <span class="font-display font-semibold text-primary">Postinumero</span>
                   <input
+                    v-model="formData.postnumber"
                     aria-label="Postinumero"
                     name="postnumber"
                     type="text"
@@ -98,6 +114,7 @@
                 <label class="block mb-4">
                   <span class="font-display font-semibold text-primary">Kaupunki</span>
                   <input
+                    v-model="formData.city"
                     aria-label="Kaupunki"
                     name="city"
                     type="text"
@@ -120,19 +137,37 @@
                 <div class="flex flex-column items-center justify-center my-6">
                   <div class="mr-3">
                     <label class="inline-flex items-center">
-                      <input type="checkbox" class="form-checkbox" name="launguage" value="suomi" />
+                      <input
+                        type="checkbox"
+                        class="form-checkbox"
+                        name="launguage"
+                        value="suomi"
+                        v-model="formData.launguage"
+                      />
                       <span class="ml-2">Suomi</span>
                     </label>
                   </div>
                   <div class="mr-3">
                     <label class="inline-flex items-center">
-                      <input type="checkbox" class="form-checkbox" name="launguage" value="svenska" />
+                      <input
+                        type="checkbox"
+                        class="form-checkbox"
+                        name="launguage"
+                        value="svenska"
+                        v-model="formData.launguage"
+                      />
                       <span class="ml-2">Svenska</span>
                     </label>
                   </div>
                   <div>
                     <label class="inline-flex items-center">
-                      <input type="checkbox" class="form-checkbox" name="launguage" value="english" />
+                      <input
+                        type="checkbox"
+                        class="form-checkbox"
+                        name="launguage"
+                        value="english"
+                        v-model="formData.launguage"
+                      />
                       <span class="ml-2">English</span>
                     </label>
                   </div>
@@ -169,8 +204,37 @@
 
 <script>
 export default {
+  data() {
+    return {
+      formData: {}
+    };
+  },
+  props: {
+    submitText: {
+      type: String,
+      required: false,
+      default: "Kiitos"
+    }
+  },
   metaInfo: {
     title: "Saisinko apua?"
+  },
+  methods: {
+    handleSubmit(e) {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: this.encode({
+          "form-name": e.target.getAttribute("name"),
+          ...this.formData
+        })
+      })
+        .then(() => {
+          this.formData = "";
+          this.submitText = "Kiitos 👍🏻";
+        })
+        .catch(error => alert(error));
+    }
   }
 };
 </script>
