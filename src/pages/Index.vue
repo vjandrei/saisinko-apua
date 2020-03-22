@@ -62,7 +62,6 @@
                   class="font-display font-extrabold text-2xl text-primary mb-4"
                 >Tilaa omaan taloyhtiöösi</h2>
               </div>
-              {{ this.submitText }}
               <form
                 class="mt-8"
                 name="contact"
@@ -137,37 +136,19 @@
                 <div class="flex flex-column items-center justify-center my-6">
                   <div class="mr-3">
                     <label class="inline-flex items-center">
-                      <input
-                        type="checkbox"
-                        class="form-checkbox"
-                        name="launguage"
-                        value="suomi"
-                        v-model="formData.launguage"
-                      />
+                      <input type="checkbox" class="form-checkbox" name="launguage" value="suomi" />
                       <span class="ml-2">Suomi</span>
                     </label>
                   </div>
                   <div class="mr-3">
                     <label class="inline-flex items-center">
-                      <input
-                        type="checkbox"
-                        class="form-checkbox"
-                        name="launguage"
-                        value="svenska"
-                        v-model="formData.launguage"
-                      />
+                      <input type="checkbox" class="form-checkbox" name="launguage" value="svenska" />
                       <span class="ml-2">Svenska</span>
                     </label>
                   </div>
                   <div>
                     <label class="inline-flex items-center">
-                      <input
-                        type="checkbox"
-                        class="form-checkbox"
-                        name="launguage"
-                        value="english"
-                        v-model="formData.launguage"
-                      />
+                      <input type="checkbox" class="form-checkbox" name="launguage" value="english" />
                       <span class="ml-2">English</span>
                     </label>
                   </div>
@@ -176,7 +157,7 @@
                   <button
                     class="font-display font-semibold text-lg bg-primary text-white rounded-full py-2 px-6"
                     type="submit"
-                  >Lähetä lomake</button>
+                  >{{ this.submitText }}</button>
                 </div>
               </form>
             </div>
@@ -213,13 +194,20 @@ export default {
     submitText: {
       type: String,
       required: false,
-      default: ""
+      default: "Lähetä lomake"
     }
   },
   metaInfo: {
     title: "Saisinko apua?"
   },
   methods: {
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        )
+        .join("&");
+    },
     handleSubmit(e) {
       fetch("/", {
         method: "POST",
