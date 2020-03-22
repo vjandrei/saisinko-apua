@@ -213,7 +213,7 @@ export default {
     submitText: {
       type: String,
       required: false,
-      default: "Kiitos"
+      default: ""
     }
   },
   metaInfo: {
