@@ -27,13 +27,9 @@
             <div class="flex items-center justify-center">
               <div class="mb-6">
                 <h1 class="font-display font-extrabold text-5xl text-primary mb-4">Saisinko apua?</h1>
-                <h2 class="font-display font-normal text-xl text-secondary mb-4">
-                  Suojellaksemme riskiryhmiä ja pandemian leviämistä haluemme
-                  varmistaa, ettei kenenkään riskiryhmän edustajan tarvitsisi
-                  mennä tarvittaville kauppa- ja apteekkireissulle, ja siten
-                  altistua virukselle. Uskomme kanssaihmisten hyvyyteen ja
-                  naapurien voimaan.
-                </h2>
+                <h2
+                  class="font-display font-normal text-xl text-secondary mb-4"
+                >Suojellaksemme ihmisiä ympärillämme haluamme varmistaa, ettei kenenkään riskiryhmään kuuluvan tarvitsisi altistua virukselle saadakseen ruokaa tai lääkkeitä. Uskomme kanssaihmisten hyvyyteen. Anna naapurin auttaa!</h2>
                 <button
                   class="w-full sm:w-auto font-display font-semibold text-lg bg-primary text-white rounded-full py-2 px-6"
                 >Tilaa omaan naapurustoosi</button>
@@ -62,22 +58,22 @@
             <h2
               class="text-2xl mb-5 text-primary uppercase font-display font-extrabold"
             >Mite tämä toimii?</h2>
-            <p
-              class="font-display text-lg text-spaceblue-400 leading-loose font-normal"
-            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quam neque culpa, illo non dignissimos eius molestiae dolor accusantium iusto ipsam ducimus debitis tenetur dicta suscipit distinctio, iure saepe a.</p>
           </div>
           <div class="flex flex-wrap block my-24">
             <div class="px-6 mb-8 w-full md:w-1/3">
-              <h2 class="text-lg font-bold text-spaceblue-400 mb-4">1.Lorem</h2>
-              <p class="text-md leading-loose font-normal text-spaceblue-300">Tekstiä</p>
+              <h2
+                class="text-lg font-bold text-spaceblue-400 mb-4"
+              >1.Kirjoita kylttiin, millaista apua tarvitset (esim. kaupassa tai apteekissa käynti)</h2>
             </div>
             <div class="px-6 mb-8 w-full md:w-1/3">
-              <h2 class="text-lg font-bold text-spaceblue-400 mb-4">2.Lorem</h2>
-              <p class="text-md leading-loose font-normal text-spaceblue-300">Tekstiä</p>
+              <h2
+                class="text-lg font-bold text-spaceblue-400 mb-4"
+              >2.Ripusta kyltti kotiovesi ulkopuolelle</h2>
             </div>
             <div class="px-6 mb-8 w-full md:w-1/3">
-              <h2 class="text-lg font-bold text-spaceblue-400 mb-4">3.Lorem</h2>
-              <p class="text-md leading-loose font-normal text-spaceblue-300">Tekstiä</p>
+              <h2
+                class="text-lg font-bold text-spaceblue-400 mb-4"
+              >3.Kun naapuri ilmoittautuu avuksi, sopikaa, miten apu (esim. kauppalasku) hoidetaan.</h2>
             </div>
           </div>
         </div>
@@ -226,58 +222,22 @@
         </div>
       </section>
     </div>
-    <section>
-      <div class="container mx-auto mb-24">
-        <div class="flex justify-center flex-wrap">
-          <div class="sm:block w-full md:flex-1 relative mb-16 md:mb-0">
-            <div class="w-full sm:w-1/2 relative z-30 px-2 xl:px-4 float-left">
-              <div
-                class="rounded-lg bg-white px-3 lg:px-6 xl:px-8 py-8 xl:py-16 text-center shadow-lg border border-gray-100 mt-32"
-              >
-                <img class="mx-auto w-full xl:w-48" src alt="Logo" />
 
-                <h4 class="text-gray-800 font-bold text-2xl mt-6">Grano</h4>
-                <p
-                  class="text-gray-600 mt-6 block md:hidden lg:block"
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium rem similique.</p>
-              </div>
-            </div>
-            <div class="w-full sm:w-1/2 relative z-30 sm:pl-6 xl:pl-8 float-left">
-              <div
-                class="rounded-lg bg-white px-3 lg:px-6 xl:px-12 py-8 xl:py-16 text-center shadow-lg border border-gray-100"
-              >
-                <img class="mx-auto w-20 xl:w-32" src alt="Logo" />
-                <h4 class="text-gray-800 font-bold text-2xl mt-6">Terveystalo</h4>
-                <p
-                  class="text-gray-600 mt-6 block md:hidden lg:block"
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium rem similique.</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex-1 flex flex-col justify-center z-30 ml-0 md:ml-12">
-            <h3
-              class="text-gray-800 font-bold text-xl sm:text-3xl lg:text-4xl xl:text-5xl pr-0 lg:pr-8 text-gray-800 font-bold ml-6 mr-6 sm:mr-0 leading-tight"
-            >Yhteystyökumppanit</h3>
-            <h4
-              class="ml-6 mt-4 sm:mt-8 mr-6 sm:mr-0 text-sm lg:text-xl xl:text-2xl font-hairline sm:font-medium lg:font-normal text-custom-purple"
-            >Lorem ipsum dolor sit amet, consectetur adipisicing elit. periores tempore, quos.</h4>
-            <p
-              class="ml-6 mt-4 sm:mt-8 mr-6 sm:mr-0 text-sm sm:text-lg xl:text-xl text-gray-600"
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere illo deleniti sed ad hic. Corrupti fugiat ex eligendi quibusdam nemo sint saepe alias porro? Doloribus fuga laborum similique necessitatibus a.</p>
-          </div>
-        </div>
-      </div>
-    </section>
     <section id="about">
       <div class="bg-gray-100">
         <div class="pt-12 sm:py-24 lg:pt-20">
           <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
               <h2 class="font-display font-extrabold text-5xl text-primary mb-4">Mistä on kyse?</h2>
-              <p class="mt-4 font-display text-xl leading-7 text-gray-900">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                iaculis bibendum elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat tempore eveniet, vel repellat architecto ipsam soluta dicta officia quaerat laborum ut commodi! Itaque dolorum eius, alias quaerat similique assumenda commodi!
-              </p>
+              <p
+                class="mt-4 font-display text-xl leading-7 text-gray-900"
+              >Elämme suljettujen ovien takana, emmekä aina edes tiedä, kuka seinän takana asuu. Miten siis voisimme tietää, kuka saattaisi tarvita apua tai keneltä sitä saada?</p>
+              <p
+                class="mt-4 font-display text-xl leading-7 text-gray-900"
+              >Idea Saisinko apua? -kyltteihin syntyi kun Andreaksen naapurissa asuva perhe joutui karanteeniin isän palattua matkoilta. Andreas alkoi pohtia, miten voisi saada tietoa muistakin kotitalossaan apua tarvitsevista, itselleen tuntemattomista ihmisistä.</p>
+              <p
+                class="mt-4 font-display text-xl leading-7 text-gray-900"
+              >Saatuaan idean hotellien käytössä olevien Älä häiritse -kylttien soveltamisesta Andreas jakoi ajatuksensa LinkedInissä. Ideaan tarttui ensimmäisenä Grano, joka halusi hoitaa Saisinko apua? -kylttien painatuksen ja jakelun kaikkialle Suomeen.</p>
             </div>
           </div>
         </div>
@@ -287,9 +247,7 @@
       <div class="container mx-auto px-6 text-center my-16">
         <div class="mb-16">
           <h2 class="text-2xl mb-5 text-spaceblue-500 uppercase font-display font-extrabold">Tiimi</h2>
-          <p
-            class="font-display text-lg text-spaceblue-400 leading-loose font-normal"
-          >Once setup, we take care of synchronizing your products forever. It’s that simple.</p>
+          <p class="font-display text-lg text-spaceblue-400 leading-loose font-normal"></p>
         </div>
         <div class="flex flex-wrap block my-24">
           <div class="px-6 mb-8 w-full md:w-1/3">
