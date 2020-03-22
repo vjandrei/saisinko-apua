@@ -146,6 +146,13 @@
                     >Haluan laput kielellä</span>
                   </div>
                 </div>
+                <label>
+                  Your Role:
+                  <select name="launguage[]" multiple>
+                    <option value="test1">test1</option>
+                    <option value="test2">test2</option>
+                  </select>
+                </label>
                 <div class="flex flex-column items-center justify-center my-6">
                   <div class="mr-3">
                     <label class="inline-flex items-center">
@@ -155,7 +162,6 @@
                         id="suomi"
                         value="suomi"
                         name="language[]"
-                        v-model="formData.language"
                       />
                       <span class="ml-2">Suomi</span>
                     </label>
@@ -168,7 +174,6 @@
                         id="svenska"
                         value="svenska"
                         name="language[]"
-                        v-model="formData.language"
                       />
                       <span class="ml-2">Svenska</span>
                     </label>
@@ -181,7 +186,6 @@
                         id="english"
                         value="english"
                         name="language[]"
-                        v-model="formData.language"
                       />
                       <span class="ml-2">English</span>
                     </label>
