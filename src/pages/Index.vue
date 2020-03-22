@@ -7,10 +7,10 @@
             <a href="/" class="font-semibold">hackthecrisisfinland.com</a>
             <div class="mt-4 md:mt-0 hidden md:block">
               <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
-                <a class="font-semibold relative nav-link">Tilauslomake</a>
+                <a href="#form" class="font-semibold relative nav-link">Tilauslomake</a>
               </div>
               <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
-                <a class="font-semibold relative nav-link">Mistä on kyse?</a>
+                <a href="#about" class="font-semibold relative nav-link">Mistä on kyse?</a>
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="form">
         <div class="container mx-auto">
           <div class="flex sm:min-h-screen items-center justify-center">
             <div class="w-full sm:w-3/5 bg-white shadow-xl rounded-lg px-16 py-6">
@@ -241,7 +241,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="about">
       <div class="bg-gray-100">
         <div class="pt-12 sm:pt-16 lg:pt-20">
           <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
