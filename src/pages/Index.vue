@@ -154,7 +154,7 @@
                         class="form-checkbox"
                         id="suomi"
                         value="suomi"
-                        name="language"
+                        name="language[]"
                         v-model="formData.language"
                       />
                       <span class="ml-2">Suomi</span>
@@ -162,13 +162,25 @@
                   </div>
                   <div class="mr-3">
                     <label class="inline-flex items-center">
-                      <input type="checkbox" class="form-checkbox" id="svenska" value="svenska" />
+                      <input
+                        type="checkbox"
+                        class="form-checkbox"
+                        id="svenska"
+                        value="svenska"
+                        name="language[]"
+                      />
                       <span class="ml-2">Svenska</span>
                     </label>
                   </div>
                   <div>
                     <label class="inline-flex items-center">
-                      <input type="checkbox" class="form-checkbox" id="english" value="english" />
+                      <input
+                        type="checkbox"
+                        class="form-checkbox"
+                        id="english"
+                        value="english"
+                        name="language[]"
+                      />
                       <span class="ml-2">English</span>
                     </label>
                   </div>
