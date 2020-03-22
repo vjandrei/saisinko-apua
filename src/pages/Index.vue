@@ -10,6 +10,9 @@
                 <a href="#form" class="font-semibold relative nav-link">Tilauslomake</a>
               </div>
               <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
+                <a href="#about" class="font-semibold relative nav-link">Tulosta</a>
+              </div>
+              <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
                 <a href="#about" class="font-semibold relative nav-link">Mistä on kyse?</a>
               </div>
             </div>
@@ -254,6 +257,7 @@
         </div>
       </div>
     </section>
+    <section></section>
   </Layout>
 </template>
 
