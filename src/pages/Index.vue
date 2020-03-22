@@ -168,6 +168,7 @@
                         id="svenska"
                         value="svenska"
                         name="language[]"
+                        v-model="formData.language"
                       />
                       <span class="ml-2">Svenska</span>
                     </label>
@@ -180,6 +181,7 @@
                         id="english"
                         value="english"
                         name="language[]"
+                        v-model="formData.language"
                       />
                       <span class="ml-2">English</span>
                     </label>
