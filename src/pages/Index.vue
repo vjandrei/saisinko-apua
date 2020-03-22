@@ -146,13 +146,7 @@
                     >Haluan laput kielellä</span>
                   </div>
                 </div>
-                <label>
-                  Your Role:
-                  <select name="launguage[]" multiple>
-                    <option value="test1">test1</option>
-                    <option value="test2">test2</option>
-                  </select>
-                </label>
+
                 <div class="flex flex-column items-center justify-center my-6">
                   <div class="mr-3">
                     <label class="inline-flex items-center">
