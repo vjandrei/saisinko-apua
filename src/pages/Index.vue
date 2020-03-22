@@ -136,19 +136,37 @@
                 <div class="flex flex-column items-center justify-center my-6">
                   <div class="mr-3">
                     <label class="inline-flex items-center">
-                      <input type="checkbox" class="form-checkbox" name="launguage" value="suomi" />
+                      <input
+                        type="checkbox"
+                        class="form-checkbox"
+                        name="suomi"
+                        value="suomi"
+                        v-model="formData.suomi"
+                      />
                       <span class="ml-2">Suomi</span>
                     </label>
                   </div>
                   <div class="mr-3">
                     <label class="inline-flex items-center">
-                      <input type="checkbox" class="form-checkbox" name="launguage" value="svenska" />
+                      <input
+                        type="checkbox"
+                        class="form-checkbox"
+                        name="svenska"
+                        value="svenska"
+                        v-model="formData.svenska"
+                      />
                       <span class="ml-2">Svenska</span>
                     </label>
                   </div>
                   <div>
                     <label class="inline-flex items-center">
-                      <input type="checkbox" class="form-checkbox" name="launguage" value="english" />
+                      <input
+                        type="checkbox"
+                        class="form-checkbox"
+                        name="svenska"
+                        value="english"
+                        v-model="formData.english"
+                      />
                       <span class="ml-2">English</span>
                     </label>
                   </div>
