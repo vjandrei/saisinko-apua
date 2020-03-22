@@ -56,6 +56,32 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="container mx-auto px-6 text-center my-16">
+          <div class="mb-16">
+            <h2
+              class="text-2xl mb-5 text-primary uppercase font-display font-extrabold"
+            >Mite tämä toimii?</h2>
+            <p
+              class="font-display text-lg text-spaceblue-400 leading-loose font-normal"
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quam neque culpa, illo non dignissimos eius molestiae dolor accusantium iusto ipsam ducimus debitis tenetur dicta suscipit distinctio, iure saepe a.</p>
+          </div>
+          <div class="flex flex-wrap block my-24">
+            <div class="px-6 mb-8 w-full md:w-1/3">
+              <h2 class="text-lg font-bold text-spaceblue-400 mb-4">1.Lorem</h2>
+              <p class="text-md leading-loose font-normal text-spaceblue-300">Tekstiä</p>
+            </div>
+            <div class="px-6 mb-8 w-full md:w-1/3">
+              <h2 class="text-lg font-bold text-spaceblue-400 mb-4">2.Lorem</h2>
+              <p class="text-md leading-loose font-normal text-spaceblue-300">Tekstiä</p>
+            </div>
+            <div class="px-6 mb-8 w-full md:w-1/3">
+              <h2 class="text-lg font-bold text-spaceblue-400 mb-4">3.Lorem</h2>
+              <p class="text-md leading-loose font-normal text-spaceblue-300">Tekstiä</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="form">
         <div class="container mx-auto">
           <div class="flex sm:min-h-screen items-center justify-center">
@@ -244,20 +270,67 @@
     </section>
     <section id="about">
       <div class="bg-gray-100">
-        <div class="pt-12 sm:pt-16 lg:pt-20">
+        <div class="pt-12 sm:py-24 lg:pt-20">
           <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
               <h2 class="font-display font-extrabold text-5xl text-primary mb-4">Mistä on kyse?</h2>
               <p class="mt-4 font-display text-xl leading-7 text-gray-900">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                iaculis bibendum elit.
+                iaculis bibendum elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat tempore eveniet, vel repellat architecto ipsam soluta dicta officia quaerat laborum ut commodi! Itaque dolorum eius, alias quaerat similique assumenda commodi!
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section></section>
+    <section>
+      <div class="container mx-auto px-6 text-center my-16">
+        <div class="mb-16">
+          <h2 class="text-2xl mb-5 text-spaceblue-500 uppercase font-display font-extrabold">Tiimi</h2>
+          <p
+            class="font-display text-lg text-spaceblue-400 leading-loose font-normal"
+          >Once setup, we take care of synchronizing your products forever. It’s that simple.</p>
+        </div>
+        <div class="flex flex-wrap block my-24">
+          <div class="px-6 mb-8 w-full md:w-1/3">
+            <g-image
+              src="~/assets/img/tanja.jpg"
+              class="lazy mb-6 mx-auto rounded-full"
+              width="500"
+            />
+            <h2 class="text-lg font-bold text-spaceblue-400 mb-4">Tanja Pelkonen</h2>
+            <p class="text-md leading-loose font-normal text-spaceblue-300">Graaffinen suunnittelui</p>
+          </div>
+          <div class="px-6 mb-8 w-full md:w-1/3">
+            <g-image
+              src="~/assets/img/andreas.jpg"
+              class="lazy mb-6 mx-auto rounded-full"
+              width="500"
+            />
+            <h2 class="text-lg font-bold text-spaceblue-400 mb-4">Andreas Koutsoukos</h2>
+            <p
+              class="text-md leading-loose font-normal text-spaceblue-300"
+            >Idean kehittäjä sekä koodari</p>
+          </div>
+          <div class="px-6 mb-8 w-full md:w-1/3">
+            <g-image
+              src="~/assets/img/saija.jpg"
+              width="500"
+              class="lazy mb-6 mx-auto rounded-full"
+            />
+            <h2 class="text-lg font-bold text-spaceblue-400 mb-4">Saija Viitala</h2>
+            <p class="text-md leading-loose font-normal text-spaceblue-300">Sisällön suunnittelu</p>
+          </div>
+        </div>
+        <div class="text-center">
+          <a
+            href="https://feedr.dk/register"
+            class="px-8 py-3 inline-block rounded text-md text-white font-semibold bg-primary hover:bg-blue-300 mb-4"
+          >Ota yhteyttä</a>
+          <div class="font-light text-spaceblue-300 text-sm">Ole yhteydessä...</div>
+        </div>
+      </div>
+    </section>
   </Layout>
 </template>
 
