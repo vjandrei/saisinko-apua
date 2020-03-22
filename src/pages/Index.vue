@@ -126,9 +126,9 @@
                 <label class="block mb-4">
                   <span class="font-display font-semibold text-primary">Määrä</span>
                   <input
-                    v-model="formData.pcs"
+                    v-model="formData.piece"
                     aria-label="Määrä"
-                    name="pcs"
+                    name="piece"
                     type="number"
                     required
                     class="form-input mt-1 block w-full"
@@ -149,7 +149,14 @@
                 <div class="flex flex-column items-center justify-center my-6">
                   <div class="mr-3">
                     <label class="inline-flex items-center">
-                      <input type="checkbox" class="form-checkbox" id="suomi" value="suomi" />
+                      <input
+                        type="checkbox"
+                        class="form-checkbox"
+                        id="suomi"
+                        value="suomi"
+                        name="language"
+                        v-model="formData.language"
+                      />
                       <span class="ml-2">Suomi</span>
                     </label>
                   </div>
