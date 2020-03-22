@@ -257,7 +257,7 @@
               width="500"
             />
             <h2 class="text-lg font-bold text-spaceblue-400 mb-4">Tanja Pelkonen</h2>
-            <p class="text-md leading-loose font-normal text-spaceblue-300">Graaffinen suunnittelui</p>
+            <p class="text-md leading-loose font-normal text-spaceblue-300">Graaffinen suunnittelu</p>
           </div>
           <div class="px-6 mb-8 w-full md:w-1/3">
             <g-image
