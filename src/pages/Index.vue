@@ -123,6 +123,19 @@
                   />
                 </label>
 
+                <label class="block mb-4">
+                  <span class="font-display font-semibold text-primary">Määrä</span>
+                  <input
+                    v-model="formData.pcs"
+                    aria-label="Määrä"
+                    name="pcs"
+                    type="number"
+                    required
+                    class="form-input mt-1 block w-full"
+                    placeholder="Kpl"
+                  />
+                </label>
+
                 <div class="relative my-6">
                   <div class="absolute inset-0 flex items-center">
                     <div class="w-full border-t border-gray-300"></div>
