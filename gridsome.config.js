@@ -20,6 +20,13 @@ module.exports = {
       options: {
         id: "UA-16541249-6"
       }
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        typeName: "SiteContent",
+        path: "./content/**/*.md"
+      }
     }
   ],
   css: {

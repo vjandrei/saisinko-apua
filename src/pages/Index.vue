@@ -4,10 +4,7 @@
       <div class="container mx-auto">
         <nav class="my-8 py-8" role="navigation" aria-label="main navigation">
           <div class="flex flex-col md:flex-row justify-between items-center mx-auto font-display">
-            <a
-              href="https://www.hackthecrisisfinland.com/"
-              class="font-semibold"
-            >hackthecrisisfinland.com</a>
+            <a href="https://www.hackthecrisisfinland.com/" class="font-semibold">#saisinkoapua</a>
             <div class="mt-4 md:mt-0 hidden md:block">
               <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
                 <a href="#form" class="font-semibold relative nav-link">Tilauslomake</a>
@@ -47,14 +44,14 @@
               </div>
               <div class="flex items-center justify-center">
                 <g-image
-                  class="w-2/5 sm:w-1/2"
-                  src="~/assets/img/hackthecrisis_mockup_1@2x.png"
+                  class="w-2/5 sm:w-2/5"
+                  src="~/assets/img/fin_saisinko-apua-kyltti-etu.png"
                   fit="contain"
                   blur="0"
                 />
                 <g-image
-                  class="w-2/5 sm:w-1/2"
-                  src="~/assets/img/hackthecrisis_mockup_2@2x.png"
+                  class="w-2/5 sm:w-2/5"
+                  src="~/assets/img/fin_saisinko-apua-kyltti-taka.png"
                   fit="contain"
                   blur="0"
                 />
