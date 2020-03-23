@@ -239,6 +239,7 @@
                           id="suomi"
                           value="suomi"
                           name="suomi"
+                          v-model="formData.suomi"
                         />
                         <span class="ml-2">Suomi</span>
                       </label>
@@ -251,6 +252,7 @@
                           id="svenska"
                           value="svenska"
                           name="svenska"
+                          v-model="formData.svenska"
                         />
                         <span class="ml-2">Svenska</span>
                       </label>
@@ -263,6 +265,7 @@
                           id="english"
                           value="english"
                           name="english"
+                          v-model="formData.english"
                         />
                         <span class="ml-2">English</span>
                       </label>
