@@ -285,7 +285,7 @@
             <h3 class="text-xl font-heading">Tanja Pelkonen</h3>
             <span>
               Vapaaehtoinen ❤️
-              <br />Graaffinen suunnittelija
+              <br />Graafinen suunnittelija
             </span>
             <p class="mt-4 text-gray-500 leading-relaxed">👨🏻‍🎤</p>
           </div>
@@ -321,7 +321,7 @@
               width="500"
               class="lazy mb-6 mx-auto rounded-full"
             />
-            <h3 class="text-xl font-heading">Jussu Korhonen</h3>
+            <h3 class="text-xl font-heading">Jussi Korhonen</h3>
             <span>
               Vapaaehtoinen ❤️
               <br />Palvelumuotoilija
