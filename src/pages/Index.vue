@@ -402,21 +402,23 @@ export default {
       default: "Lähetä lomake"
     }
   },
-  metaInfo() {
-    title: "Saisinko apua?";
+  metaInfo: {
+    title: "Lappu oveen ja anna naapurin auttaa!",
     meta: [
       {
         name: "description",
-        content: ""
+        content:
+          "Suojellaksemme ihmisiä ympärillämme haluamme varmistaa, ettei kenenkään riskiryhmään kuuluvan tarvitsisi altistua virukselle saadakseen ruokaa tai lääkkeitä. Uskomme kanssaihmisten hyvyyteen. Anna naapurin auttaa!"
       },
       { property: "og:type", content: "website" },
       {
         property: "og:title",
-        content: ""
+        content: "Lappu oveen ja anna naapurin auttaa!"
       },
       {
         property: "og:description",
-        content: ""
+        content:
+          "Suojellaksemme ihmisiä ympärillämme haluamme varmistaa, ettei kenenkään riskiryhmään kuuluvan tarvitsisi altistua virukselle saadakseen ruokaa tai lääkkeitä. Uskomme kanssaihmisten hyvyyteen. Anna naapurin auttaa!"
       },
       {
         property: "og:url",
@@ -424,24 +426,25 @@ export default {
       },
       {
         property: "og:image",
-        content: ""
+        content: "/cover.jpg"
       },
       { name: "twitter:card", content: "Summary" },
       {
         name: "twitter:title",
-        content: ""
+        content: "Lappu oveen ja anna naapurin auttaa!"
       },
       {
         name: "twitter:description",
-        content: ""
+        content:
+          "Suojellaksemme ihmisiä ympärillämme haluamme varmistaa, ettei kenenkään riskiryhmään kuuluvan tarvitsisi altistua virukselle saadakseen ruokaa tai lääkkeitä. Uskomme kanssaihmisten hyvyyteen. Anna naapurin auttaa!"
       },
       { name: "twitter:site", content: "" },
       { name: "twitter:creator", content: "" },
       {
         name: "twitter:image",
-        content: ""
+        content: "/cover.jpg"
       }
-    ];
+    ]
   },
   methods: {
     encode(data) {
