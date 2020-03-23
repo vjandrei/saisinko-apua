@@ -329,9 +329,9 @@
         </div>
         <div class="text-center my-6">
           <a
-            href
+            href="mailto:@saisinko.apua@gmail.com?subject=Yhdenotto"
             class="px-8 py-3 inline-block rounded text-md text-white font-semibold bg-primary hover:bg-blue-300 mb-4"
-          >Kysy projektista</a>
+          >Autamme mielellämme</a>
           <div class="font-light text-spaceblue-300 text-sm"></div>
         </div>
       </div>
