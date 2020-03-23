@@ -12,5 +12,17 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: [require("@tailwindcss/custom-forms")]
+  plugins: [
+    require("@tailwindcss/custom-forms"),
+    require("tailwindcss-alpha")({
+      modules: {
+        backgroundColors: []
+      },
+      alpha: {
+        "25": 0.25,
+        "50": 0.5,
+        "75": 0.75
+      }
+    })
+  ]
 };

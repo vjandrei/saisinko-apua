@@ -3,36 +3,57 @@
     <section>
       <div class="container mx-auto">
         <nav class="my-8 py-8" role="navigation" aria-label="main navigation">
-          <div class="flex flex-col md:flex-row justify-between items-center mx-auto font-display">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center mx-auto font-display"
+          >
             <a href="/" class="font-semibold">hackthecrisisfinland.com</a>
             <div class="mt-4 md:mt-0 hidden md:block">
               <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
-                <a href="#form" class="font-semibold relative nav-link">Tilauslomake</a>
+                <a href="#form" class="font-semibold relative nav-link"
+                  >Tilauslomake</a
+                >
               </div>
               <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
-                <a href="@/assets/hackthecrisis.pdf" class="font-semibold relative nav-link">Tulosta</a>
+                <a
+                  href="hackthecrisis.pdf"
+                  class="font-semibold relative nav-link"
+                  >Tulosta</a
+                >
               </div>
               <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
-                <a href="#about" class="font-semibold relative nav-link">Mistä on kyse?</a>
+                <a href="#about" class="font-semibold relative nav-link"
+                  >Mistä on kyse?</a
+                >
               </div>
             </div>
           </div>
         </nav>
       </div>
     </section>
-    <div class="flower-bg bg-local bg-no-repeat bg-right">
+    <div class="flower-bg bg-local bg-no-repeat bg-right-top">
       <section>
         <div class="container mx-auto">
           <div class="grid grid-cols-1 sm:grid-cols-2">
             <div class="flex items-center justify-center">
               <div class="mb-6">
-                <h1 class="font-display font-extrabold text-5xl text-primary mb-4">Saisinko apua?</h1>
+                <h1
+                  class="font-display font-extrabold text-5xl text-primary mb-4"
+                >
+                  Saisinko apua?
+                </h1>
                 <h2
                   class="font-display font-normal text-xl text-secondary mb-4"
-                >Suojellaksemme ihmisiä ympärillämme haluamme varmistaa, ettei kenenkään riskiryhmään kuuluvan tarvitsisi altistua virukselle saadakseen ruokaa tai lääkkeitä. Uskomme kanssaihmisten hyvyyteen. Anna naapurin auttaa!</h2>
+                >
+                  Suojellaksemme ihmisiä ympärillämme haluamme varmistaa, ettei
+                  kenenkään riskiryhmään kuuluvan tarvitsisi altistua virukselle
+                  saadakseen ruokaa tai lääkkeitä. Uskomme kanssaihmisten
+                  hyvyyteen. Anna naapurin auttaa!
+                </h2>
                 <button
                   class="w-full sm:w-auto font-display font-semibold text-lg bg-primary text-white rounded-full py-2 px-6"
-                >Tilaa omaan naapurustoosi</button>
+                >
+                  Tilaa omaan naapurustoosi
+                </button>
               </div>
             </div>
             <div class="flex items-center justify-center">
@@ -54,26 +75,34 @@
       </section>
       <section>
         <div class="container mx-auto px-6 text-center my-16">
-          <div class="mb-16">
-            <h2
-              class="text-2xl mb-5 text-primary uppercase font-display font-extrabold"
-            >Mite tämä toimii?</h2>
+          <div>
+            <h2 class="text-2xl py-5 text-primary font-display font-extrabold">
+              Mite tämä toimii?
+            </h2>
           </div>
-          <div class="flex flex-wrap block my-24">
-            <div class="px-6 mb-8 w-full md:w-1/3">
-              <h2
-                class="text-lg font-bold text-spaceblue-400 mb-4"
-              >1.Kirjoita kylttiin, millaista apua tarvitset (esim. kaupassa tai apteekissa käynti)</h2>
+          <div class="grid grid-cols-3 gap-4">
+            <div
+              class="steps flex justify-center content-center py-8 px-8 rounded"
+            >
+              <h2 class="font-display text-lg font-semibold">
+                1.Kirjoita kylttiin, millaista apua tarvitset (esim. kaupassa
+                tai apteekissa käynti)
+              </h2>
             </div>
-            <div class="px-6 mb-8 w-full md:w-1/3">
-              <h2
-                class="text-lg font-bold text-spaceblue-400 mb-4"
-              >2.Ripusta kyltti kotiovesi ulkopuolelle</h2>
+            <div
+              class="steps flex justify-center content-center py-8 px-8 rounded"
+            >
+              <h2 class="font-display text-lg font-semibold">
+                2.Ripusta kyltti kotiovesi ulkopuolelle
+              </h2>
             </div>
-            <div class="px-6 mb-8 w-full md:w-1/3">
-              <h2
-                class="text-lg font-bold text-spaceblue-400 mb-4"
-              >3.Kun naapuri ilmoittautuu avuksi, sopikaa, miten apu (esim. kauppalasku) hoidetaan.</h2>
+            <div
+              class="steps flex justify-center content-center py-8 px-8 rounded"
+            >
+              <h2 class="font-display text-lg font-semibold">
+                3.Kun naapuri ilmoittautuu avuksi, sopikaa, miten apu (esim.
+                kauppalasku) hoidetaan.
+              </h2>
             </div>
           </div>
         </div>
@@ -81,11 +110,15 @@
       <section id="form">
         <div class="container mx-auto">
           <div class="flex sm:min-h-screen items-center justify-center">
-            <div class="w-full sm:w-3/5 bg-white shadow-xl rounded-lg px-16 py-6">
+            <div
+              class="w-full sm:w-3/5 bg-white shadow-xl rounded-lg px-16 py-6"
+            >
               <div>
                 <h2
                   class="font-display font-extrabold text-2xl text-primary mb-4"
-                >Tilaa omaan taloyhtiöösi</h2>
+                >
+                  Tilaa omaan taloyhtiöösi
+                </h2>
               </div>
               <form
                 class="mt-8"
@@ -97,7 +130,9 @@
                 data-netlify-honeypot="bot-field"
               >
                 <label class="block mb-4">
-                  <span class="font-display font-semibold text-primary">Nimesi</span>
+                  <span class="font-display font-semibold text-primary"
+                    >Nimesi</span
+                  >
                   <input
                     v-model="formData.name"
                     aria-label="Nimesi"
@@ -110,7 +145,9 @@
                 </label>
 
                 <label class="block mb-4">
-                  <span class="font-display font-semibold text-primary">Katuosoite</span>
+                  <span class="font-display font-semibold text-primary"
+                    >Katuosoite</span
+                  >
                   <input
                     v-model="formData.address"
                     aria-label="Katuosoite"
@@ -123,7 +160,9 @@
                 </label>
 
                 <label class="block mb-4">
-                  <span class="font-display font-semibold text-primary">Postinumero</span>
+                  <span class="font-display font-semibold text-primary"
+                    >Postinumero</span
+                  >
                   <input
                     v-model="formData.postnumber"
                     aria-label="Postinumero"
@@ -136,7 +175,9 @@
                 </label>
 
                 <label class="block mb-4">
-                  <span class="font-display font-semibold text-primary">Kaupunki</span>
+                  <span class="font-display font-semibold text-primary"
+                    >Kaupunki</span
+                  >
                   <input
                     v-model="formData.city"
                     aria-label="Kaupunki"
@@ -149,7 +190,9 @@
                 </label>
 
                 <label class="block mb-4">
-                  <span class="font-display font-semibold text-primary">Määrä</span>
+                  <span class="font-display font-semibold text-primary"
+                    >Määrä</span
+                  >
                   <input
                     v-model="formData.piece"
                     aria-label="Määrä"
@@ -168,7 +211,8 @@
                   <div class="relative flex justify-center text-sm leading-5">
                     <span
                       class="px-2 bg-white font-display font-semibold text-primary"
-                    >Haluan laput kielellä</span>
+                      >Haluan laput kielellä</span
+                    >
                   </div>
                 </div>
 
@@ -214,7 +258,9 @@
                   <button
                     class="font-display font-semibold text-lg bg-primary text-white rounded-full py-2 px-6"
                     type="submit"
-                  >{{ this.submitText }}</button>
+                  >
+                    {{ this.submitText }}
+                  </button>
                 </div>
               </form>
             </div>
@@ -228,16 +274,28 @@
         <div class="pt-12 sm:py-24 lg:pt-20">
           <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-              <h2 class="font-display font-extrabold text-5xl text-primary mb-4">Mistä on kyse?</h2>
-              <p
-                class="mt-4 font-display text-xl leading-7 text-gray-900"
-              >Elämme suljettujen ovien takana, emmekä aina edes tiedä, kuka seinän takana asuu. Miten siis voisimme tietää, kuka saattaisi tarvita apua tai keneltä sitä saada?</p>
-              <p
-                class="mt-4 font-display text-xl leading-7 text-gray-900"
-              >Idea Saisinko apua? -kyltteihin syntyi kun Andreaksen naapurissa asuva perhe joutui karanteeniin isän palattua matkoilta. Andreas alkoi pohtia, miten voisi saada tietoa muistakin kotitalossaan apua tarvitsevista, itselleen tuntemattomista ihmisistä.</p>
-              <p
-                class="mt-4 font-display text-xl leading-7 text-gray-900"
-              >Saatuaan idean hotellien käytössä olevien Älä häiritse -kylttien soveltamisesta Andreas jakoi ajatuksensa LinkedInissä. Ideaan tarttui ensimmäisenä Grano, joka halusi hoitaa Saisinko apua? -kylttien painatuksen ja jakelun kaikkialle Suomeen.</p>
+              <h2
+                class="font-display font-extrabold text-5xl text-primary mb-4"
+              >
+                Mistä on kyse?
+              </h2>
+              <p class="mt-4 font-display text-xl leading-7 text-gray-900">
+                Elämme suljettujen ovien takana, emmekä aina edes tiedä, kuka
+                seinän takana asuu. Miten siis voisimme tietää, kuka saattaisi
+                tarvita apua tai keneltä sitä saada?
+              </p>
+              <p class="mt-4 font-display text-xl leading-7 text-gray-900">
+                Idea Saisinko apua? -kyltteihin syntyi kun Andreaksen naapurissa
+                asuva perhe joutui karanteeniin isän palattua matkoilta. Andreas
+                alkoi pohtia, miten voisi saada tietoa muistakin kotitalossaan
+                apua tarvitsevista, itselleen tuntemattomista ihmisistä.
+              </p>
+              <p class="mt-4 font-display text-xl leading-7 text-gray-900">
+                Saatuaan idean hotellien käytössä olevien Älä häiritse -kylttien
+                soveltamisesta Andreas jakoi ajatuksensa LinkedInissä. Ideaan
+                tarttui ensimmäisenä Grano, joka halusi hoitaa Saisinko apua?
+                -kylttien painatuksen ja jakelun kaikkialle Suomeen.
+              </p>
             </div>
           </div>
         </div>
@@ -246,8 +304,14 @@
     <section>
       <div class="container mx-auto px-6 text-center my-16">
         <div class="mb-16">
-          <h2 class="text-2xl mb-5 text-spaceblue-500 uppercase font-display font-extrabold">Tiimi</h2>
-          <p class="font-display text-lg text-spaceblue-400 leading-loose font-normal"></p>
+          <h2
+            class="text-2xl mb-5 text-spaceblue-500 uppercase font-display font-extrabold"
+          >
+            Tiimi
+          </h2>
+          <p
+            class="font-display text-lg text-spaceblue-400 leading-loose font-normal"
+          ></p>
         </div>
         <div class="flex flex-wrap block my-24">
           <div class="px-6 mb-8 w-full md:w-1/3">
@@ -256,8 +320,12 @@
               class="lazy mb-6 mx-auto rounded-full"
               width="500"
             />
-            <h2 class="text-lg font-bold text-spaceblue-400 mb-4">Tanja Pelkonen</h2>
-            <p class="text-md leading-loose font-normal text-spaceblue-300">Graaffinen suunnittelu</p>
+            <h2 class="text-lg font-bold text-spaceblue-400 mb-4">
+              Tanja Pelkonen
+            </h2>
+            <p class="text-md leading-loose font-normal text-spaceblue-300">
+              Graaffinen suunnittelu
+            </p>
           </div>
           <div class="px-6 mb-8 w-full md:w-1/3">
             <g-image
@@ -265,10 +333,12 @@
               class="lazy mb-6 mx-auto rounded-full"
               width="500"
             />
-            <h2 class="text-lg font-bold text-spaceblue-400 mb-4">Andreas Koutsoukos</h2>
-            <p
-              class="text-md leading-loose font-normal text-spaceblue-300"
-            >Idean kehittäjä sekä koodari</p>
+            <h2 class="text-lg font-bold text-spaceblue-400 mb-4">
+              Andreas Koutsoukos
+            </h2>
+            <p class="text-md leading-loose font-normal text-spaceblue-300">
+              Idean kehittäjä sekä koodari
+            </p>
           </div>
           <div class="px-6 mb-8 w-full md:w-1/3">
             <g-image
@@ -276,16 +346,23 @@
               width="500"
               class="lazy mb-6 mx-auto rounded-full"
             />
-            <h2 class="text-lg font-bold text-spaceblue-400 mb-4">Saija Viitala</h2>
-            <p class="text-md leading-loose font-normal text-spaceblue-300">Sisällön suunnittelu</p>
+            <h2 class="text-lg font-bold text-spaceblue-400 mb-4">
+              Saija Viitala
+            </h2>
+            <p class="text-md leading-loose font-normal text-spaceblue-300">
+              Sisällön suunnittelu
+            </p>
           </div>
         </div>
         <div class="text-center">
           <a
             href="https://feedr.dk/register"
             class="px-8 py-3 inline-block rounded text-md text-white font-semibold bg-primary hover:bg-blue-300 mb-4"
-          >Ota yhteyttä</a>
-          <div class="font-light text-spaceblue-300 text-sm">Ole yhteydessä...</div>
+            >Ota yhteyttä</a
+          >
+          <div class="font-light text-spaceblue-300 text-sm">
+            Ole yhteydessä...
+          </div>
         </div>
       </div>
     </section>
@@ -339,5 +416,8 @@ export default {
 <style>
 .flower-bg {
   background-image: url("~@/assets/img/htcf-flower.png");
+}
+.steps {
+  background: rgba(255, 255, 255, 0.8);
 }
 </style>
