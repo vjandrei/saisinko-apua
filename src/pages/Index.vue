@@ -271,14 +271,16 @@
 
     <section id="about">
       <div class="bg-gray-100">
-        <div class="pt-12 sm:py-24 lg:pt-20">
-          <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
+        <div class="container mx-auto">
+          <div class="flex flex-wrap -mx-2 py-16">
+            <div class="lg:w-2/5 px-2 lg:pr-16 mb-6 lg:mb-0">
               <h2
                 class="font-display font-extrabold text-5xl text-primary mb-4"
               >
                 Mistä on kyse?
               </h2>
+            </div>
+            <div class="lg:w-3/5 px-2">
               <p class="mt-4 font-display text-xl leading-7 text-gray-900">
                 Elämme suljettujen ovien takana, emmekä aina edes tiedä, kuka
                 seinän takana asuu. Miten siis voisimme tietää, kuka saattaisi
@@ -305,7 +307,7 @@
       <div class="container mx-auto px-6 text-center my-16">
         <div class="mb-16">
           <h2
-            class="text-2xl mb-5 text-spaceblue-500 uppercase font-display font-extrabold"
+            class="text-2xl mb-5 text-spaceblue-500 font-display font-extrabold"
           >
             Tiimi
           </h2>
@@ -313,56 +315,71 @@
             class="font-display text-lg text-spaceblue-400 leading-loose font-normal"
           ></p>
         </div>
-        <div class="flex flex-wrap block my-24">
-          <div class="px-6 mb-8 w-full md:w-1/3">
+        <div class="flex flex-wrap -mx-8 font-display">
+          <div class="w-full sm:w-1/2 md:w-1/4 p-8">
             <g-image
               src="~/assets/img/tanja.jpg"
               class="lazy mb-6 mx-auto rounded-full"
               width="500"
             />
-            <h2 class="text-lg font-bold text-spaceblue-400 mb-4">
+            <h3 class="text-xl font-heading">
               Tanja Pelkonen
-            </h2>
-            <p class="text-md leading-loose font-normal text-spaceblue-300">
-              Graaffinen suunnittelu
+            </h3>
+            <span>Graaffinen suunnittelu</span>
+            <p class="mt-4 text-gray-500 leading-relaxed">
+              ...
             </p>
           </div>
-          <div class="px-6 mb-8 w-full md:w-1/3">
+          <div class="w-full sm:w-1/2 md:w-1/4 p-8 md:border-l">
             <g-image
               src="~/assets/img/andreas.jpg"
               class="lazy mb-6 mx-auto rounded-full"
               width="500"
             />
-            <h2 class="text-lg font-bold text-spaceblue-400 mb-4">
+            <h3 class="text-xl font-heading">
               Andreas Koutsoukos
-            </h2>
-            <p class="text-md leading-loose font-normal text-spaceblue-300">
-              Idean kehittäjä sekä koodari
+            </h3>
+            <span>Idean kehittäjä sekä koodari</span>
+            <p class="mt-4 text-gray-500 leading-relaxed">
+              ...
             </p>
           </div>
-          <div class="px-6 mb-8 w-full md:w-1/3">
+          <div class="w-full sm:w-1/2 md:w-1/4 p-8 md:border-l">
             <g-image
               src="~/assets/img/saija.jpg"
               width="500"
               class="lazy mb-6 mx-auto rounded-full"
             />
-            <h2 class="text-lg font-bold text-spaceblue-400 mb-4">
+            <h3 class="text-xl font-heading" data-config-id="col3-name">
               Saija Viitala
-            </h2>
-            <p class="text-md leading-loose font-normal text-spaceblue-300">
-              Sisällön suunnittelu
+            </h3>
+            <span>Sisällön suunnittelu</span>
+            <p class="mt-4 text-gray-500 leading-relaxed">
+              ...
+            </p>
+          </div>
+          <div class="w-full sm:w-1/2 md:w-1/4 p-8 md:border-l">
+            <g-image
+              src="~/assets/img/jussi.jpg"
+              width="500"
+              class="lazy mb-6 mx-auto rounded-full"
+            />
+            <h3 class="text-xl font-heading" data-config-id="col3-name">
+              Jussu Korhonen
+            </h3>
+            <span>...</span>
+            <p class="mt-4 text-gray-500 leading-relaxed">
+              ...
             </p>
           </div>
         </div>
-        <div class="text-center">
+        <div class="text-center my-6">
           <a
-            href="https://feedr.dk/register"
+            href=""
             class="px-8 py-3 inline-block rounded text-md text-white font-semibold bg-primary hover:bg-blue-300 mb-4"
             >Ota yhteyttä</a
           >
-          <div class="font-light text-spaceblue-300 text-sm">
-            Ole yhteydessä...
-          </div>
+          <div class="font-light text-spaceblue-300 text-sm"></div>
         </div>
       </div>
     </section>
