@@ -231,26 +231,45 @@
                   <div
                     class="flex flex-column items-center justify-center my-6"
                   >
-                    <label>
-                      <input
-                        type="checkbox"
-                        id="checkbox"
-                        value="check1"
-                        name="checkbox1"
-                        v-model="formData.checkbox1"
-                      />
-                      <span>Checkbox1</span>
-                    </label>
-                    <label>
-                      <input
-                        type="checkbox"
-                        id="checkbox"
-                        value="check2"
-                        name="checkbox2"
-                        v-model="formData.checkbox2"
-                      />
-                      <span>Checkbox1</span>
-                    </label>
+                    <div class="mr-3">
+                      <label>
+                        <input
+                          class="form-checkbox"
+                          type="checkbox"
+                          id="checkbox"
+                          value="check1"
+                          name="checkbox1"
+                          v-model="formData.checkbox1"
+                        />
+                        <span>Suomi</span>
+                      </label>
+                    </div>
+                    <div class="mr-3">
+                      <label>
+                        <input
+                          class="form-checkbox"
+                          type="checkbox"
+                          id="checkbox"
+                          value="check2"
+                          name="checkbox2"
+                          v-model="formData.checkbox2"
+                        />
+                        <span>Svenska</span>
+                      </label>
+                    </div>
+                    <div class="mr-3">
+                      <label>
+                        <input
+                          class="form-checkbox"
+                          type="checkbox"
+                          id="checkbox"
+                          value="check3"
+                          name="checkbox3"
+                          v-model="formData.checkbox3"
+                        />
+                        <span>English</span>
+                      </label>
+                    </div>
                   </div>
                   <div class="text-center">
                     <button
