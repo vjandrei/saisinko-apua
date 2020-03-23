@@ -21,5 +21,9 @@ module.exports = {
         plugins: postcssPlugins
       }
     }
+  },
+  icon: {
+    favicon: "./src/favicon.png",
+    touchicon: "./src/apple-touch-icon.png"
   }
 };

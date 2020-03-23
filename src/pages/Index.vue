@@ -6,7 +6,11 @@
           <div
             class="flex flex-col md:flex-row justify-between items-center mx-auto font-display"
           >
-            <a href="/" class="font-semibold">hackthecrisisfinland.com</a>
+            <a
+              href="https://www.hackthecrisisfinland.com/"
+              class="font-semibold"
+              >hackthecrisisfinland.com</a
+            >
             <div class="mt-4 md:mt-0 hidden md:block">
               <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
                 <a href="#form" class="font-semibold relative nav-link"
