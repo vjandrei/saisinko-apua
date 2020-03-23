@@ -31,7 +31,7 @@
               <div class="flex items-center justify-center">
                 <div class="mb-6">
                   <h1
-                    class="font-display font-extrabold text-4xl sm:text-5xl text-primary text-center my-8"
+                    class="font-display font-extrabold text-4xl sm:text-5xl text-primary text-center sm:text-left my-8"
                   >Saisinko apua?</h1>
                   <h2 class="font-display font-normal text-lg sm:text-xl text-gray-900 mb-6">
                     Suojellaksemme ihmisiä ympärillämme haluamme varmistaa,
