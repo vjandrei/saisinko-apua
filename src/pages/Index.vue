@@ -238,7 +238,7 @@
                           class="form-checkbox"
                           id="suomi"
                           value="suomi"
-                          name="language[]"
+                          name="suomi"
                         />
                         <span class="ml-2">Suomi</span>
                       </label>
@@ -250,7 +250,7 @@
                           class="form-checkbox"
                           id="svenska"
                           value="svenska"
-                          name="language[]"
+                          name="svenska"
                         />
                         <span class="ml-2">Svenska</span>
                       </label>
@@ -262,7 +262,7 @@
                           class="form-checkbox"
                           id="english"
                           value="english"
-                          name="language[]"
+                          name="english"
                         />
                         <span class="ml-2">English</span>
                       </label>
@@ -347,9 +347,9 @@
             <h3 class="text-xl font-heading">
               Tanja Pelkonen
             </h3>
-            <span>Graaffinen suunnittelu</span>
+            <span>Vapaaehtoinen ❤️ <br />Graaffinen suunnittelija</span>
             <p class="mt-4 text-gray-500 leading-relaxed">
-              ...
+              👨🏻‍🎤
             </p>
           </div>
           <div class="w-full sm:w-1/2 md:w-1/4 p-8 md:border-l">
@@ -361,9 +361,12 @@
             <h3 class="text-xl font-heading">
               Andreas Koutsoukos
             </h3>
-            <span>Idean kehittäjä sekä koodari</span>
+            <span
+              >Vapaaehtoinen ❤️ <br />
+              Idean kehittäjä sekä koodari</span
+            >
             <p class="mt-4 text-gray-500 leading-relaxed">
-              ...
+              💻
             </p>
           </div>
           <div class="w-full sm:w-1/2 md:w-1/4 p-8 md:border-l">
@@ -372,12 +375,15 @@
               width="500"
               class="lazy mb-6 mx-auto rounded-full"
             />
-            <h3 class="text-xl font-heading" data-config-id="col3-name">
+            <h3 class="text-xl font-heading">
               Saija Viitala
             </h3>
-            <span>Sisällön suunnittelu</span>
+            <span
+              >Vapaaehtoinen ❤️ <br />
+              Sisältö suunnittelija</span
+            >
             <p class="mt-4 text-gray-500 leading-relaxed">
-              ...
+              📝
             </p>
           </div>
           <div class="w-full sm:w-1/2 md:w-1/4 p-8 md:border-l">
@@ -386,12 +392,12 @@
               width="500"
               class="lazy mb-6 mx-auto rounded-full"
             />
-            <h3 class="text-xl font-heading" data-config-id="col3-name">
+            <h3 class="text-xl font-heading">
               Jussu Korhonen
             </h3>
-            <span>...</span>
+            <span>Vapaaehtoinen ❤️ <br />Palvelumuotoilija</span>
             <p class="mt-4 text-gray-500 leading-relaxed">
-              ...
+              💪🏻
             </p>
           </div>
         </div>
@@ -399,7 +405,7 @@
           <a
             href=""
             class="px-8 py-3 inline-block rounded text-md text-white font-semibold bg-primary hover:bg-blue-300 mb-4"
-            >Ota yhteyttä</a
+            >Kysy projektista</a
           >
           <div class="font-light text-spaceblue-300 text-sm"></div>
         </div>
@@ -407,7 +413,7 @@
     </section>
     <section>
       <div class="bg-gray-100">
-        <div class="container mx-auto sm:mt-40 sm:my-16">
+        <div class="container mx-auto sm:mt-40 sm:my-16 sm:py-16">
           <div class="flex justify-center flex-wrap">
             <div class="sm:block w-full md:flex-1 relative mb-16 md:mb-0">
               <div
@@ -436,13 +442,11 @@
                 <div
                   class="rounded-lg bg-white px-3 lg:px-6 xl:px-12 py-8 xl:py-16 text-center shadow-lg border border-gray-100"
                 >
-                  <img class="mx-auto w-20 xl:w-32" src alt="Logo" />
                   <h4 class="text-gray-800 font-bold text-2xl mt-6">
-                    ???
+                    Miten sinun yrityksesi voisi auttaa?
                   </h4>
                   <p class="text-gray-600 mt-6 block md:hidden lg:block">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Praesentium rem similique.
+                    Auta meitä ...
                   </p>
                 </div>
               </div>
@@ -456,16 +460,12 @@
               <h4
                 class="ml-6 mt-4 sm:mt-8 mr-6 sm:mr-0 text-sm lg:text-xl xl:text-2xl font-hairline sm:font-medium lg:font-normal text-custom-purple"
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                periores tempore, quos.
+                ...
               </h4>
               <p
                 class="ml-6 mt-4 sm:mt-8 mr-6 sm:mr-0 text-sm sm:text-lg xl:text-xl text-gray-600"
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-                illo deleniti sed ad hic. Corrupti fugiat ex eligendi quibusdam
-                nemo sint saepe alias porro? Doloribus fuga laborum similique
-                necessitatibus a.
+                ...
               </p>
             </div>
           </div>
