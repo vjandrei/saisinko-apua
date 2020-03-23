@@ -236,10 +236,10 @@
                         type="checkbox"
                         id="checkbox"
                         value="check1"
-                        name="checkbox1"
-                        v-model="formData.checkbox1"
+                        name="suomi"
+                        v-model="formData.suomi"
                       />
-                      <span>Checkbox1</span>
+                      <span>Suomi</span>
                     </label>
                     <label>
                       <input
@@ -249,7 +249,7 @@
                         name="checkbox2"
                         v-model="formData.checkbox2"
                       />
-                      <span>Checkbox2</span>
+                      <span>Svenska</span>
                     </label>
 
                     <label>
@@ -260,7 +260,7 @@
                         name="checkbox3"
                         v-model="formData.checkbox3"
                       />
-                      <span>Checkbox3</span>
+                      <span>English</span>
                     </label>
                   </div>
                   <div class="text-center">
