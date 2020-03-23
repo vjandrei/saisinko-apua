@@ -231,7 +231,7 @@
                   <div
                     class="flex flex-column items-center justify-center my-6"
                   >
-                    <label>
+                    <label class="mr-4">
                       <input
                         type="checkbox"
                         id="checkbox"
@@ -239,28 +239,28 @@
                         name="suomi"
                         v-model="formData.suomi"
                       />
-                      <span>Suomi</span>
+                      <span class="ml-2">Suomi 🇫🇮</span>
                     </label>
-                    <label>
+                    <label class="mr-4">
                       <input
                         type="checkbox"
                         id="checkbox"
                         value="check2"
-                        name="checkbox2"
-                        v-model="formData.checkbox2"
+                        name="svenska"
+                        v-model="formData.svenska"
                       />
-                      <span>Svenska</span>
+                      <span class="ml-2">Svenska 🇸🇪</span>
                     </label>
 
-                    <label>
+                    <label class="mr-4">
                       <input
                         type="checkbox"
                         id="checkbox"
                         value="check3"
-                        name="checkbox3"
-                        v-model="formData.checkbox3"
+                        name="english"
+                        v-model="formData.english"
                       />
-                      <span>English</span>
+                      <span class="ml-2">English 🇬🇧</span>
                     </label>
                   </div>
                   <div class="text-center">
