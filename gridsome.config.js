@@ -14,7 +14,14 @@ if (process.env.NODE_ENV === "production")
 
 module.exports = {
   siteName: "Saisinko apua?",
-  plugins: [],
+  plugins: [
+    {
+      use: "@gridsome/plugin-google-analytics",
+      options: {
+        id: "UA-16541249-6"
+      }
+    }
+  ],
   css: {
     loaderOptions: {
       postcss: {
