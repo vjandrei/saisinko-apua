@@ -22,5 +22,13 @@ export default function(Vue, { router, head, isClient }) {
     herf:
       "https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap"
   });
+  head.link.push({
+    rel: "apple-touch-icon",
+    href: "apple-touch-icon.png"
+  });
+  head.link.push({
+    rel: "icon",
+    href: "favicon.ico"
+  });
   Vue.component("font-awesome-icon", FontAwesomeIcon);
 }
