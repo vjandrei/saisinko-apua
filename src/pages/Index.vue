@@ -426,7 +426,7 @@ export default {
       },
       {
         property: "og:image",
-        content: "/cover.jpg"
+        content: "https://saisinkoapua.netlify.com/cover.jpg"
       },
       { name: "twitter:card", content: "Summary" },
       {
@@ -442,7 +442,7 @@ export default {
       { name: "twitter:creator", content: "" },
       {
         name: "twitter:image",
-        content: "/cover.jpg"
+        content: "https://saisinkoapua.netlify.com/cover.jpg"
       }
     ]
   },
