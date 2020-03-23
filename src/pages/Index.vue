@@ -24,16 +24,16 @@
       </div>
     </section>
     <section class="mt-6">
-      <div class="flower-bg bg-local bg-no-repeat bg-right-top">
+      <div class="flower-bg bg-local bg-no-repeat bg-top sm:bg-right-top">
         <section class="my-4">
           <div class="container mx-auto">
             <div class="grid grid-cols-1 sm:grid-cols-2">
               <div class="flex items-center justify-center">
                 <div class="mb-6">
                   <h1
-                    class="font-display font-extrabold text-2xl sm:text-5xl text-primary mb-4"
+                    class="font-display font-extrabold text-4xl sm:text-5xl text-primary text-center my-8"
                   >Saisinko apua?</h1>
-                  <h2 class="font-display font-normal text-xl text-secondary mb-6">
+                  <h2 class="font-display font-normal text-lg sm:text-xl text-gray-900 mb-6">
                     Suojellaksemme ihmisiä ympärillämme haluamme varmistaa,
                     ettei kenenkään riskiryhmään kuuluvan tarvitsisi altistua
                     virukselle saadakseen ruokaa tai lääkkeitä. Uskomme
@@ -41,19 +41,19 @@
                   </h2>
                   <a
                     href="#form"
-                    class="w-full sm:w-auto font-display font-semibold text-md sm:text-lg bg-primary text-white rounded-full py-3 px-6 mt-4 inline-block"
+                    class="w-full sm:w-auto font-display font-semibold text-md sm:text-lg text-center bg-primary text-white rounded-full py-3 px-6 mt-4 inline-block"
                   >Tilaa omaan naapurustoosi</a>
                 </div>
               </div>
               <div class="flex items-center justify-center">
                 <g-image
-                  class="w-4/12 sm:w-1/2"
+                  class="w-2/5 sm:w-1/2"
                   src="~/assets/img/hackthecrisis_mockup_1@2x.png"
                   fit="contain"
                   blur="0"
                 />
                 <g-image
-                  class="w-4/12 sm:w-1/2"
+                  class="w-2/5 sm:w-1/2"
                   src="~/assets/img/hackthecrisis_mockup_2@2x.png"
                   fit="contain"
                   blur="0"
@@ -220,7 +220,7 @@
                   </div>
                   <div class="text-center">
                     <button
-                      class="font-display font-semibold text-lg bg-primary text-white rounded-full py-2 px-6"
+                      class="w-full sm:w-auto font-display font-semibold text-md sm:text-lg text-center bg-primary text-white rounded-full py-3 px-6 mt-4 inline-block"
                       type="submit"
                     >{{ this.submitText }}</button>
                   </div>
@@ -235,21 +235,21 @@
       <div class="bg-gray-100">
         <div class="container mx-auto">
           <div class="flex flex-wrap sm:-mx-2 py-3 sm:py-16">
-            <div class="lg:w-2/5 px-2 lg:pr-16 mb-6 lg:mb-0">
+            <div class="lg:w-2/5 px-2 lg:pr-16">
               <h2
-                class="font-display font-extrabold text-2xl sm:text-5xl text-primary sm:mb-4"
+                class="font-display font-extrabold text-4xl sm:text-5xl text-primary sm:mb-4"
               >Mistä on kyse?</h2>
             </div>
             <div class="lg:w-3/5 px-2">
               <p
-                class="mt-4 font-display text-md sm:text-xl tracking-normal sm:leading-7 text-gray-900"
+                class="mt-4 font-display text-lg sm:text-xl tracking-normal sm:leading-7 text-gray-900"
               >
                 Elämme suljettujen ovien takana, emmekä aina edes tiedä, kuka
                 seinän takana asuu. Miten siis voisimme tietää, kuka saattaisi
                 tarvita apua tai keneltä sitä saada?
               </p>
               <p
-                class="mt-4 font-display text-md sm:text-xl tracking-normal sm:leading-7 text-gray-900"
+                class="mt-4 font-display text-lg sm:text-xl tracking-normal sm:leading-7 text-gray-900"
               >
                 Idea Saisinko apua? -kyltteihin syntyi kun Andreaksen naapurissa
                 asuva perhe joutui karanteeniin isän palattua matkoilta. Andreas
@@ -257,7 +257,7 @@
                 apua tarvitsevista, itselleen tuntemattomista ihmisistä.
               </p>
               <p
-                class="mt-4 font-display text-md sm:text-xl tracking-normal sm:leading-7 text-gray-900"
+                class="mt-4 font-display text-lg sm:text-xl tracking-normal sm:leading-7 text-gray-900"
               >
                 Saatuaan idean hotellien käytössä olevien Älä häiritse -kylttien
                 soveltamisesta Andreas jakoi ajatuksensa LinkedInissä. Ideaan
@@ -330,7 +330,7 @@
         <div class="text-center my-6">
           <a
             href="mailto:@saisinko.apua@gmail.com?subject=Yhdenotto"
-            class="px-8 py-3 inline-block rounded text-md text-white font-semibold bg-primary hover:bg-blue-300 mb-4"
+            class="w-full sm:w-auto font-display font-semibold text-md sm:text-lg text-center bg-primary text-white rounded-full py-3 px-6 mt-4 inline-block"
           >Autamme mielellämme</a>
           <div class="font-light text-spaceblue-300 text-sm"></div>
         </div>
@@ -402,8 +402,46 @@ export default {
       default: "Lähetä lomake"
     }
   },
-  metaInfo: {
-    title: "Saisinko apua?"
+  metaInfo() {
+    title: "Saisinko apua?";
+    meta: [
+      {
+        name: "description",
+        content: ""
+      },
+      { property: "og:type", content: "website" },
+      {
+        property: "og:title",
+        content: ""
+      },
+      {
+        property: "og:description",
+        content: ""
+      },
+      {
+        property: "og:url",
+        content: "https://saisinkoapua.netlify.com/"
+      },
+      {
+        property: "og:image",
+        content: ""
+      },
+      { name: "twitter:card", content: "Summary" },
+      {
+        name: "twitter:title",
+        content: ""
+      },
+      {
+        name: "twitter:description",
+        content: ""
+      },
+      { name: "twitter:site", content: "" },
+      { name: "twitter:creator", content: "" },
+      {
+        name: "twitter:image",
+        content: ""
+      }
+    ];
   },
   methods: {
     encode(data) {
