@@ -238,8 +238,8 @@
                           class="form-checkbox"
                           id="suomi"
                           value="suomi"
-                          name="suomi"
-                          v-model="formData.suomi"
+                          name="suomi_checkbox"
+                          v-model="formData.suomi_checkbox"
                         />
                         <span class="ml-2">Suomi</span>
                       </label>
@@ -251,8 +251,8 @@
                           class="form-checkbox"
                           id="svenska"
                           value="svenska"
-                          name="svenska"
-                          v-model="formData.svenska"
+                          name="svenska_checkbox"
+                          v-model="formData.svenska_checkbox"
                         />
                         <span class="ml-2">Svenska</span>
                       </label>
@@ -262,10 +262,9 @@
                         <input
                           type="checkbox"
                           class="form-checkbox"
-                          id="english"
                           value="english"
-                          name="english"
-                          v-model="formData.english"
+                          name="english_checkbox"
+                          v-model="formData.english_checkbox"
                         />
                         <span class="ml-2">English</span>
                       </label>
