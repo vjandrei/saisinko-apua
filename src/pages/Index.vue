@@ -43,18 +43,19 @@
                     Saisinko apua?
                   </h1>
                   <h2
-                    class="font-display font-normal text-xl text-secondary mb-4"
+                    class="font-display font-normal text-xl text-secondary mb-6"
                   >
                     Suojellaksemme ihmisiä ympärillämme haluamme varmistaa,
                     ettei kenenkään riskiryhmään kuuluvan tarvitsisi altistua
                     virukselle saadakseen ruokaa tai lääkkeitä. Uskomme
                     kanssaihmisten hyvyyteen. Anna naapurin auttaa!
                   </h2>
-                  <button
-                    class="w-full sm:w-auto font-display font-semibold text-md sm:text-lg bg-primary text-white rounded-full py-2 px-6"
+                  <a
+                    href="#form"
+                    class="w-full sm:w-auto font-display font-semibold text-md sm:text-lg bg-primary text-white rounded-full py-3 px-6 mt-4 inline-block"
                   >
                     Tilaa omaan naapurustoosi
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="flex items-center justify-center">
