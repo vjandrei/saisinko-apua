@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <section>
+    <section class="hidden sm:block">
       <div class="container mx-auto">
         <nav class="my-8 py-8" role="navigation" aria-label="main navigation">
           <div
@@ -30,269 +30,295 @@
         </nav>
       </div>
     </section>
-    <div class="flower-bg bg-local bg-no-repeat bg-right-top">
-      <section>
-        <div class="container mx-auto">
-          <div class="grid grid-cols-1 sm:grid-cols-2">
-            <div class="flex items-center justify-center">
-              <div class="mb-6">
-                <h1
-                  class="font-display font-extrabold text-5xl text-primary mb-4"
-                >
-                  Saisinko apua?
-                </h1>
-                <h2
-                  class="font-display font-normal text-xl text-secondary mb-4"
-                >
-                  Suojellaksemme ihmisiä ympärillämme haluamme varmistaa, ettei
-                  kenenkään riskiryhmään kuuluvan tarvitsisi altistua virukselle
-                  saadakseen ruokaa tai lääkkeitä. Uskomme kanssaihmisten
-                  hyvyyteen. Anna naapurin auttaa!
-                </h2>
-                <button
-                  class="w-full sm:w-auto font-display font-semibold text-lg bg-primary text-white rounded-full py-2 px-6"
-                >
-                  Tilaa omaan naapurustoosi
-                </button>
-              </div>
-            </div>
-            <div class="flex items-center justify-center">
-              <g-image
-                src="~/assets/img/hackthecrisis_mockup_1.png"
-                fit="contain"
-                width="200"
-                blur="60"
-              />
-              <g-image
-                src="~/assets/img/hackthecrisis_mockup_2.png"
-                fit="contain"
-                width="200"
-                blur="60"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container mx-auto px-6 text-center my-16">
-          <div>
-            <h2 class="text-2xl py-5 text-primary font-display font-extrabold">
-              Mite tämä toimii?
-            </h2>
-          </div>
-          <div class="grid grid-cols-3 gap-4">
-            <div
-              class="steps flex justify-center content-center py-8 px-8 rounded"
-            >
-              <h2 class="font-display text-lg font-semibold">
-                1.Kirjoita kylttiin, millaista apua tarvitset (esim. kaupassa
-                tai apteekissa käynti)
-              </h2>
-            </div>
-            <div
-              class="steps flex justify-center content-center py-8 px-8 rounded"
-            >
-              <h2 class="font-display text-lg font-semibold">
-                2.Ripusta kyltti kotiovesi ulkopuolelle
-              </h2>
-            </div>
-            <div
-              class="steps flex justify-center content-center py-8 px-8 rounded"
-            >
-              <h2 class="font-display text-lg font-semibold">
-                3.Kun naapuri ilmoittautuu avuksi, sopikaa, miten apu (esim.
-                kauppalasku) hoidetaan.
-              </h2>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="form">
-        <div class="container mx-auto">
-          <div class="flex sm:min-h-screen items-center justify-center">
-            <div
-              class="w-full sm:w-3/5 bg-white shadow-xl rounded-lg px-16 py-6"
-            >
-              <div>
-                <h2
-                  class="font-display font-extrabold text-2xl text-primary mb-4"
-                >
-                  Tilaa omaan taloyhtiöösi
-                </h2>
-              </div>
-              <form
-                class="mt-8"
-                name="contact"
-                method="post"
-                v-on:submit.prevent="handleSubmit"
-                action="/success/"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-              >
-                <label class="block mb-4">
-                  <span class="font-display font-semibold text-primary"
-                    >Nimesi</span
+    <section class="mt-6">
+      <div class="flower-bg bg-local bg-no-repeat bg-right-top">
+        <section class="my-4">
+          <div class="container mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2">
+              <div class="flex items-center justify-center">
+                <div class="mb-6">
+                  <h1
+                    class="font-display font-extrabold text-2xl sm:text-5xl text-primary mb-4"
                   >
-                  <input
-                    v-model="formData.name"
-                    aria-label="Nimesi"
-                    name="name"
-                    type="text"
-                    required
-                    class="form-input mt-1 block w-full"
-                    placeholder="Matti Meikäläinen"
-                  />
-                </label>
-
-                <label class="block mb-4">
-                  <span class="font-display font-semibold text-primary"
-                    >Katuosoite</span
+                    Saisinko apua?
+                  </h1>
+                  <h2
+                    class="font-display font-normal text-xl text-secondary mb-4"
                   >
-                  <input
-                    v-model="formData.address"
-                    aria-label="Katuosoite"
-                    name="address"
-                    type="text"
-                    required
-                    class="form-input mt-1 block w-full"
-                    placeholder="Mallikatu 1 a"
-                  />
-                </label>
-
-                <label class="block mb-4">
-                  <span class="font-display font-semibold text-primary"
-                    >Postinumero</span
-                  >
-                  <input
-                    v-model="formData.postnumber"
-                    aria-label="Postinumero"
-                    name="postnumber"
-                    type="text"
-                    required
-                    class="form-input mt-1 block w-full"
-                    placeholder="01234"
-                  />
-                </label>
-
-                <label class="block mb-4">
-                  <span class="font-display font-semibold text-primary"
-                    >Kaupunki</span
-                  >
-                  <input
-                    v-model="formData.city"
-                    aria-label="Kaupunki"
-                    name="city"
-                    type="text"
-                    required
-                    class="form-input mt-1 block w-full"
-                    placeholder="Kaupunki"
-                  />
-                </label>
-
-                <label class="block mb-4">
-                  <span class="font-display font-semibold text-primary"
-                    >Määrä</span
-                  >
-                  <input
-                    v-model="formData.piece"
-                    aria-label="Määrä"
-                    name="piece"
-                    type="number"
-                    required
-                    class="form-input mt-1 block w-full"
-                    placeholder="Kpl"
-                  />
-                </label>
-
-                <div class="relative my-6">
-                  <div class="absolute inset-0 flex items-center">
-                    <div class="w-full border-t border-gray-300"></div>
-                  </div>
-                  <div class="relative flex justify-center text-sm leading-5">
-                    <span
-                      class="px-2 bg-white font-display font-semibold text-primary"
-                      >Haluan laput kielellä</span
-                    >
-                  </div>
-                </div>
-
-                <div class="flex flex-column items-center justify-center my-6">
-                  <div class="mr-3">
-                    <label class="inline-flex items-center">
-                      <input
-                        type="checkbox"
-                        class="form-checkbox"
-                        id="suomi"
-                        value="suomi"
-                        name="language[]"
-                      />
-                      <span class="ml-2">Suomi</span>
-                    </label>
-                  </div>
-                  <div class="mr-3">
-                    <label class="inline-flex items-center">
-                      <input
-                        type="checkbox"
-                        class="form-checkbox"
-                        id="svenska"
-                        value="svenska"
-                        name="language[]"
-                      />
-                      <span class="ml-2">Svenska</span>
-                    </label>
-                  </div>
-                  <div>
-                    <label class="inline-flex items-center">
-                      <input
-                        type="checkbox"
-                        class="form-checkbox"
-                        id="english"
-                        value="english"
-                        name="language[]"
-                      />
-                      <span class="ml-2">English</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="text-center">
+                    Suojellaksemme ihmisiä ympärillämme haluamme varmistaa,
+                    ettei kenenkään riskiryhmään kuuluvan tarvitsisi altistua
+                    virukselle saadakseen ruokaa tai lääkkeitä. Uskomme
+                    kanssaihmisten hyvyyteen. Anna naapurin auttaa!
+                  </h2>
                   <button
-                    class="font-display font-semibold text-lg bg-primary text-white rounded-full py-2 px-6"
-                    type="submit"
+                    class="w-full sm:w-auto font-display font-semibold text-md sm:text-lg bg-primary text-white rounded-full py-2 px-6"
                   >
-                    {{ this.submitText }}
+                    Tilaa omaan naapurustoosi
                   </button>
                 </div>
-              </form>
+              </div>
+              <div class="flex items-center justify-center">
+                <g-image
+                  class="w-4/12 sm:w-1/2"
+                  src="~/assets/img/hackthecrisis_mockup_1@2x.png"
+                  fit="contain"
+                  blur="0"
+                />
+                <g-image
+                  class="w-4/12 sm:w-1/2"
+                  src="~/assets/img/hackthecrisis_mockup_2@2x.png"
+                  fit="contain"
+                  blur="0"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+        <section class="my-4">
+          <div class="container mx-auto text-center sm:my-16">
+            <div>
+              <h2
+                class="text-2xl py-5 text-primary font-display font-extrabold"
+              >
+                Mite tämä toimii?
+              </h2>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-4">
+              <div
+                class="bg-primary text-white flex flex-col py-8 px-8 rounded-md"
+              >
+                <span class="block font-display text-5xl font-extrabold mb-4"
+                  >1.</span
+                >
+                <h2 class="font-display text-lg font-semibold">
+                  Kirjoita kylttiin, millaista apua tarvitset (esim. kaupassa
+                  tai apteekissa käynti)
+                </h2>
+              </div>
+              <div
+                class="bg-primary text-white flex flex-col py-8 px-8 rounded-md"
+              >
+                <span class="block font-display text-5xl font-extrabold mb-4"
+                  >2.</span
+                >
+                <h2 class="font-display text-lg font-semibold">
+                  Ripusta kyltti kotiovesi ulkopuolelle
+                </h2>
+              </div>
+              <div
+                class="bg-primary text-white flex flex-col py-8 px-8 rounded-md"
+              >
+                <span class="block font-display text-5xl font-extrabold mb-4"
+                  >3.</span
+                >
+                <h2 class="font-display text-lg font-semibold">
+                  Kun naapuri ilmoittautuu avuksi, sopikaa, miten apu (esim.
+                  kauppalasku) hoidetaan.
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="form" class="my-4">
+          <div class="container mx-auto">
+            <div class="flex items-center justify-center">
+              <div
+                class="w-full sm:w-3/5 py-3 mt-4 sm:px-16 sm:py-6 bg-white sm:shadow-xl rounded-lg"
+              >
+                <div>
+                  <h2
+                    class="font-display font-extrabold text-2xl text-primary mb-4"
+                  >
+                    Tilaa omaan taloyhtiöösi
+                  </h2>
+                </div>
+                <form
+                  class="mt-8"
+                  name="contact"
+                  method="post"
+                  v-on:submit.prevent="handleSubmit"
+                  action="/success/"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                >
+                  <label class="block mb-4">
+                    <span class="font-display font-semibold text-primary"
+                      >Nimesi</span
+                    >
+                    <input
+                      v-model="formData.name"
+                      aria-label="Nimesi"
+                      name="name"
+                      type="text"
+                      required
+                      class="form-input mt-1 block w-full"
+                      placeholder="Matti Meikäläinen"
+                    />
+                  </label>
 
-    <section id="about">
+                  <label class="block mb-4">
+                    <span class="font-display font-semibold text-primary"
+                      >Katuosoite</span
+                    >
+                    <input
+                      v-model="formData.address"
+                      aria-label="Katuosoite"
+                      name="address"
+                      type="text"
+                      required
+                      class="form-input mt-1 block w-full"
+                      placeholder="Mallikatu 1 a"
+                    />
+                  </label>
+
+                  <label class="block mb-4">
+                    <span class="font-display font-semibold text-primary"
+                      >Postinumero</span
+                    >
+                    <input
+                      v-model="formData.postnumber"
+                      aria-label="Postinumero"
+                      name="postnumber"
+                      type="text"
+                      required
+                      class="form-input mt-1 block w-full"
+                      placeholder="01234"
+                    />
+                  </label>
+
+                  <label class="block mb-4">
+                    <span class="font-display font-semibold text-primary"
+                      >Kaupunki</span
+                    >
+                    <input
+                      v-model="formData.city"
+                      aria-label="Kaupunki"
+                      name="city"
+                      type="text"
+                      required
+                      class="form-input mt-1 block w-full"
+                      placeholder="Kaupunki"
+                    />
+                  </label>
+
+                  <label class="block mb-4">
+                    <span class="font-display font-semibold text-primary"
+                      >Määrä</span
+                    >
+                    <input
+                      v-model="formData.piece"
+                      aria-label="Määrä"
+                      name="piece"
+                      type="number"
+                      required
+                      class="form-input mt-1 block w-full"
+                      placeholder="Kpl"
+                    />
+                  </label>
+
+                  <div class="relative my-6">
+                    <div class="absolute inset-0 flex items-center">
+                      <div class="w-full border-t border-gray-300"></div>
+                    </div>
+                    <div class="relative flex justify-center text-sm leading-5">
+                      <span
+                        class="px-2 bg-white font-display font-semibold text-primary"
+                        >Haluan laput kielellä</span
+                      >
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-column items-center justify-center my-6"
+                  >
+                    <div class="mr-3">
+                      <label class="inline-flex items-center">
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          id="suomi"
+                          value="suomi"
+                          name="language[]"
+                        />
+                        <span class="ml-2">Suomi</span>
+                      </label>
+                    </div>
+                    <div class="mr-3">
+                      <label class="inline-flex items-center">
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          id="svenska"
+                          value="svenska"
+                          name="language[]"
+                        />
+                        <span class="ml-2">Svenska</span>
+                      </label>
+                    </div>
+                    <div>
+                      <label class="inline-flex items-center">
+                        <input
+                          type="checkbox"
+                          class="form-checkbox"
+                          id="english"
+                          value="english"
+                          name="language[]"
+                        />
+                        <span class="ml-2">English</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      class="font-display font-semibold text-lg bg-primary text-white rounded-full py-2 px-6"
+                      type="submit"
+                    >
+                      {{ this.submitText }}
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section id="about" class="my-4 sm:my-12">
       <div class="bg-gray-100">
         <div class="container mx-auto">
-          <div class="flex flex-wrap -mx-2 py-16">
+          <div class="flex flex-wrap sm:-mx-2 py-3 sm:py-16">
             <div class="lg:w-2/5 px-2 lg:pr-16 mb-6 lg:mb-0">
               <h2
-                class="font-display font-extrabold text-5xl text-primary mb-4"
+                class="font-display font-extrabold text-2xl sm:text-5xl text-primary sm:mb-4"
               >
                 Mistä on kyse?
               </h2>
             </div>
             <div class="lg:w-3/5 px-2">
-              <p class="mt-4 font-display text-xl leading-7 text-gray-900">
+              <p
+                class="mt-4 font-display text-md sm:text-xl tracking-normal
+
+ sm:leading-7  text-gray-900"
+              >
                 Elämme suljettujen ovien takana, emmekä aina edes tiedä, kuka
                 seinän takana asuu. Miten siis voisimme tietää, kuka saattaisi
                 tarvita apua tai keneltä sitä saada?
               </p>
-              <p class="mt-4 font-display text-xl leading-7 text-gray-900">
+              <p
+                class="mt-4 font-display text-md sm:text-xl tracking-normal
+
+ sm:leading-7 text-gray-900"
+              >
                 Idea Saisinko apua? -kyltteihin syntyi kun Andreaksen naapurissa
                 asuva perhe joutui karanteeniin isän palattua matkoilta. Andreas
                 alkoi pohtia, miten voisi saada tietoa muistakin kotitalossaan
                 apua tarvitsevista, itselleen tuntemattomista ihmisistä.
               </p>
-              <p class="mt-4 font-display text-xl leading-7 text-gray-900">
+              <p
+                class="mt-4 font-display text-md sm:text-xl tracking-normal
+
+ sm:leading-7 text-gray-900"
+              >
                 Saatuaan idean hotellien käytössä olevien Älä häiritse -kylttien
                 soveltamisesta Andreas jakoi ajatuksensa LinkedInissä. Ideaan
                 tarttui ensimmäisenä Grano, joka halusi hoitaa Saisinko apua?
@@ -304,17 +330,13 @@
       </div>
     </section>
     <section>
-      <div class="container mx-auto px-6 text-center my-16">
-        <div class="mb-16">
-          <h2
-            class="text-2xl mb-5 text-spaceblue-500 font-display font-extrabold"
-          >
-            Tiimi
-          </h2>
-          <p
-            class="font-display text-lg text-spaceblue-400 leading-loose font-normal"
-          ></p>
-        </div>
+      <div class="container mx-auto px-6 text-center ">
+        <h2 class="text-2xl text-primary font-display font-extrabold">
+          Tiimi
+        </h2>
+        <p class="font-display text-lg leading-loose font-normal mb-4">
+          ... about the team...
+        </p>
         <div class="flex flex-wrap -mx-8 font-display">
           <div class="w-full sm:w-1/2 md:w-1/4 p-8">
             <g-image
@@ -499,7 +521,7 @@ export default {
 
 <style>
 .flower-bg {
-  background-image: url("~@/assets/img/htcf-flower.png");
+  background-image: url("~@/assets/img/htcf-flower@2x.png");
 }
 .steps {
   background: rgba(255, 255, 255, 0.8);
