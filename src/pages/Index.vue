@@ -407,14 +407,14 @@
     </section>
     <section>
       <div class="bg-gray-100">
-        <div class="container mx-auto mt-40 py-16">
+        <div class="container mx-auto sm:mt-40 sm:my-16">
           <div class="flex justify-center flex-wrap">
             <div class="sm:block w-full md:flex-1 relative mb-16 md:mb-0">
               <div
                 class="w-full sm:w-1/2 relative z-30 px-2 xl:px-4 float-left"
               >
                 <div
-                  class="rounded-lg bg-white px-3 lg:px-6 xl:px-8 py-8 xl:py-16 text-center shadow-lg border border-gray-100 mt-32"
+                  class="rounded-lg bg-white px-3 lg:px-6 xl:px-8 py-8 xl:py-16 text-center shadow-lg border border-gray-100 sm:mt-32"
                 >
                   <img
                     class="mx-auto w-full xl:w-48"
