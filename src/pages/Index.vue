@@ -272,9 +272,11 @@
     <section>
       <div class="container mx-auto px-6 text-center">
         <h2 class="text-2xl text-primary font-display font-extrabold">Tiimi</h2>
-        <p class="font-display text-lg leading-loose font-normal mb-4">... about the team...</p>
+        <p
+          class="font-display text-lg leading-loose font-normal mb-4"
+        >Olemme tässä projektissa vapaaehotisesti</p>
         <div class="flex flex-wrap -mx-8 font-display">
-          <div class="w-full sm:w-1/2 md:w-1/4 p-8">
+          <div class="w-full sm:w-1/2 lg:w-1/4 p-8">
             <g-image
               src="~/assets/img/tanja.jpg"
               class="lazy mb-6 mx-auto rounded-full"
@@ -287,7 +289,7 @@
             </span>
             <p class="mt-4 text-gray-500 leading-relaxed">👨🏻‍🎤</p>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/4 p-8 md:border-l">
+          <div class="w-full sm:w-1/2 lg:w-1/4 p-8 lg:border-l">
             <g-image
               src="~/assets/img/andreas.jpg"
               class="lazy mb-6 mx-auto rounded-full"
@@ -300,7 +302,7 @@
             </span>
             <p class="mt-4 text-gray-500 leading-relaxed">💻</p>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/4 p-8 md:border-l">
+          <div class="w-full sm:w-1/2 lg:w-1/4 p-8 lg:border-l">
             <g-image
               src="~/assets/img/saija.jpg"
               width="500"
@@ -313,7 +315,7 @@
             </span>
             <p class="mt-4 text-gray-500 leading-relaxed">📝</p>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/4 p-8 md:border-l">
+          <div class="w-full sm:w-1/2 lg:w-1/4 p-8 lg:border-l">
             <g-image
               src="~/assets/img/jussi.jpg"
               width="500"
