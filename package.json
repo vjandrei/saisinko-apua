@@ -11,7 +11,8 @@
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.5.0",
     "gridsome": "^0.7.0",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.2.0",
+    "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",

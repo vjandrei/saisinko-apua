@@ -3,6 +3,7 @@
 
 // Import global styles
 require("~/main.css");
+require("typeface-montserrat");
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
@@ -17,11 +18,6 @@ library.add(faArrowRight);
 export default function(Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
-  head.link.push({
-    rel: "stylesheet",
-    herf:
-      "https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap"
-  });
   head.link.push({
     rel: "apple-touch-icon",
     href: "apple-touch-icon.png"
