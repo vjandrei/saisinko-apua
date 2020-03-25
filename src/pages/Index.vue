@@ -184,7 +184,7 @@
         </div>
         <div class="text-center my-6">
           <a
-            href="mailto:@saisinko.apua@gmail.com?subject=Yhdenotto"
+            href="mailto:saisinko.apua@gmail.com?subject=Yhdenotto"
             class="w-full sm:w-auto font-display font-semibold text-md sm:text-lg text-center bg-primary text-white rounded-full py-3 px-6 mt-4 inline-block"
           >Autamme mielellämme</a>
           <div class="font-light text-spaceblue-300 text-sm"></div>
