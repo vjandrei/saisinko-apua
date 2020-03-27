@@ -1,5 +1,5 @@
 export default {
-  english: {
+  en: {
     text: {
       hello: "Hello World!!",
       formLink: "Order Form (coming soon)",
@@ -33,7 +33,7 @@ export default {
       coWorkers: "Co-workers"
     }
   },
-  finnish: {
+  fi: {
     text: {
       hello: "Moikka Maailma!",
       formLink: "Tilauslomake (tulossa)",

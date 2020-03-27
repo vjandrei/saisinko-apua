@@ -36,8 +36,8 @@
                   >{{ $t("text.localeLink") }}</label
                 >
                 <select v-model="locale">
-                  <option>english</option>
-                  <option>finnish</option>
+                  <option>en</option>
+                  <option>fi</option>
                 </select>
               </div>
             </div>
@@ -293,12 +293,16 @@
 </template>
 
 <script>
+let browser_language;
+browser_language = window.navigator.language.split("-")[0];
+console.log(browser_language);
+
 export default {
   data() {
-    this.$i18n.locale = "finnish";
+    this.$i18n.locale = browser_language;
     return {
       formData: {},
-      locale: "finnish"
+      locale: "en"
     };
   },
   props: {
