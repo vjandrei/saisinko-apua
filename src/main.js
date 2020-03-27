@@ -12,10 +12,13 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import DefaultLayout from "~/layouts/Default.vue";
 
+import VueI18n from "vue-i18n";
+import messages from "~/locale";
+
 config.autoAddCss = false;
 library.add(faArrowRight);
 
-export default function(Vue, { router, head, isClient }) {
+export default function(Vue, { router, head, appOptions, isClient }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
   head.link.push({
@@ -27,4 +30,18 @@ export default function(Vue, { router, head, isClient }) {
     href: "favicon.ico"
   });
   Vue.component("font-awesome-icon", FontAwesomeIcon);
+
+  Vue.use(VueI18n);
+
+  let browser_language;
+
+  if (isClient) {
+    browser_language = window.navigator.language.split("-")[0];
+    console.log(browser_language);
+  }
+
+  appOptions.i18n = new VueI18n({
+    locale: browser_language,
+    messages
+  });
 }
