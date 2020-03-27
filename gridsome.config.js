@@ -29,6 +29,9 @@ module.exports = {
       }
     }
   ],
+  templates: {
+    SiteContent: "/:id"
+  },
   css: {
     loaderOptions: {
       postcss: {

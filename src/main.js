@@ -37,7 +37,6 @@ export default function(Vue, { router, head, appOptions, isClient }) {
 
   if (isClient) {
     browser_language = window.navigator.language.split("-")[0];
-    console.log(browser_language);
   }
 
   appOptions.i18n = new VueI18n({

@@ -295,14 +295,13 @@
 <script>
 let browser_language;
 browser_language = window.navigator.language.split("-")[0];
-console.log(browser_language);
 
 export default {
   data() {
     this.$i18n.locale = browser_language;
     return {
       formData: {},
-      locale: "en"
+      locale: (this.$i18n.locale = this.$route.path.split("/")[1])
     };
   },
   props: {
@@ -356,9 +355,13 @@ export default {
       }
     ]
   },
+  async mounted() {
+    this.$i18n.locale = this.$route.path.split("/")[1];
+  },
   watch: {
     locale(val) {
       this.$i18n.locale = val;
+      this.$router.push({ path: `/${val}` });
     }
   },
   methods: {
