@@ -13,7 +13,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import DefaultLayout from "~/layouts/Default.vue";
 
 import VueI18n from "vue-i18n";
-import messages from "~/locale";
+import messages from "~/content";
 
 config.autoAddCss = false;
 library.add(faArrowRight);

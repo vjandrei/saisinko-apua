@@ -2,47 +2,7 @@
   <Layout :show-language="true">
     <section class="hidden sm:block">
       <div class="container mx-auto">
-        <nav class="my-8 py-8" role="navigation" aria-label="main navigation">
-          <div
-            class="flex flex-col md:flex-row justify-between items-center mx-auto font-display"
-          >
-            <a
-              href="https://www.hackthecrisisfinland.com/"
-              class="font-semibold"
-              >#saisinkoapua</a
-            >
-            <div class="mt-4 md:mt-0 hidden md:block">
-              <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
-                <a href="#form" class="font-semibold relative nav-link">
-                  {{ $t("text.formLink") }}</a
-                >
-              </div>
-              <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
-                <a
-                  href="hackthecrisis.pdf"
-                  class="font-semibold relative nav-link"
-                  >{{ $t("text.printLink") }}</a
-                >
-              </div>
-              <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
-                <a href="#about" class="font-semibold relative nav-link">{{
-                  $t("text.about")
-                }}</a>
-              </div>
-              <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
-                <label
-                  for="locale"
-                  class="font-semibold relative nav-link mr-3"
-                  >{{ $t("text.localeLink") }}</label
-                >
-                <select v-model="locale">
-                  <option>fi</option>
-                  <option>en</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </nav>
+        <Navigation @clicked="localeUpdate" />
       </div>
     </section>
     <section class="mt-6">
@@ -54,14 +14,10 @@
                 <div class="mb-6">
                   <h1
                     class="font-display font-extrabold text-4xl sm:text-5xl text-primary text-center sm:text-left my-8"
-                  >
-                    {{ $t("text.heading") }}
-                  </h1>
+                  >{{ $t("text.heading") }}</h1>
                   <h2
                     class="font-display font-normal text-lg sm:text-xl text-gray-900 mb-6"
-                  >
-                    {{ $t("text.ingress") }}
-                  </h2>
+                  >{{ $t("text.ingress") }}</h2>
                 </div>
               </div>
               <div class="flex items-center justify-center">
@@ -86,46 +42,27 @@
             <div>
               <h2
                 class="text-2xl py-5 text-primary font-display font-extrabold"
-              >
-                {{ $t("text.howItWorks") }}
-              </h2>
+              >{{ $t("text.howItWorks") }}</h2>
             </div>
             <div class="grid sm:grid-cols-3 gap-4">
-              <div
-                class="bg-primary text-white flex flex-col py-8 px-8 rounded-md"
-              >
-                <span class="block font-display text-5xl font-extrabold mb-4"
-                  >1.</span
-                >
-                <h2 class="font-display text-lg font-semibold">
-                  {{ $t("text.step1") }}
-                </h2>
+              <div class="bg-primary text-white flex flex-col py-8 px-8 rounded-md">
+                <span class="block font-display text-5xl font-extrabold mb-4">1.</span>
+                <h2 class="font-display text-lg font-semibold">{{ $t("text.step1") }}</h2>
               </div>
-              <div
-                class="bg-primary text-white flex flex-col py-8 px-8 rounded-md"
-              >
-                <span class="block font-display text-5xl font-extrabold mb-4"
-                  >2.</span
-                >
-                <h2 class="font-display text-lg font-semibold">
-                  {{ $t("text.step2") }}
-                </h2>
+              <div class="bg-primary text-white flex flex-col py-8 px-8 rounded-md">
+                <span class="block font-display text-5xl font-extrabold mb-4">2.</span>
+                <h2 class="font-display text-lg font-semibold">{{ $t("text.step2") }}</h2>
               </div>
-              <div
-                class="bg-primary text-white flex flex-col py-8 px-8 rounded-md"
-              >
-                <span class="block font-display text-5xl font-extrabold mb-4"
-                  >3.</span
-                >
-                <h2 class="font-display text-lg font-semibold">
-                  {{ $t("text.step3") }}
-                </h2>
+              <div class="bg-primary text-white flex flex-col py-8 px-8 rounded-md">
+                <span class="block font-display text-5xl font-extrabold mb-4">3.</span>
+                <h2 class="font-display text-lg font-semibold">{{ $t("text.step3") }}</h2>
               </div>
             </div>
           </div>
         </section>
       </div>
     </section>
+
     <section id="about" class="my-4 sm:my-12">
       <div class="bg-gray-100">
         <div class="container mx-auto">
@@ -133,26 +70,18 @@
             <div class="lg:w-2/5 px-2 lg:pr-16">
               <h2
                 class="font-display font-extrabold text-4xl sm:text-5xl text-primary sm:mb-4"
-              >
-                {{ $t("text.about") }}
-              </h2>
+              >{{ $t("text.about") }}</h2>
             </div>
             <div class="lg:w-3/5 px-2">
               <p
                 class="mt-4 font-display text-lg sm:text-xl tracking-normal sm:leading-7 text-gray-900"
-              >
-                {{ $t("text.aboutParagraphy1") }}
-              </p>
+              >{{ $t("text.aboutParagraphy1") }}</p>
               <p
                 class="mt-4 font-display text-lg sm:text-xl tracking-normal sm:leading-7 text-gray-900"
-              >
-                {{ $t("text.aboutParagraphy2") }}
-              </p>
+              >{{ $t("text.aboutParagraphy2") }}</p>
               <p
                 class="mt-4 font-display text-lg sm:text-xl tracking-normal sm:leading-7 text-gray-900"
-              >
-                {{ $t("text.aboutParagraphy3") }}
-              </p>
+              >{{ $t("text.aboutParagraphy3") }}</p>
             </div>
           </div>
         </div>
@@ -160,12 +89,8 @@
     </section>
     <section>
       <div class="container mx-auto px-6 text-center">
-        <h2 class="text-2xl text-primary font-display font-extrabold">
-          {{ $t("text.team") }}
-        </h2>
-        <p class="font-display text-lg leading-loose font-normal mb-4">
-          {{ $t("text.teamAbout") }}
-        </p>
+        <h2 class="text-2xl text-primary font-display font-extrabold">{{ $t("text.team") }}</h2>
+        <p class="font-display text-lg leading-loose font-normal mb-4">{{ $t("text.teamAbout") }}</p>
         <div class="flex flex-wrap -mx-8 font-display">
           <div class="w-full sm:w-1/2 lg:w-1/4 p-8">
             <g-image
@@ -176,7 +101,8 @@
             <h3 class="text-xl font-heading">Tanja Pelkonen</h3>
             <span>
               {{ $t("text.volunteering") }}
-              <br />{{ $t("text.tanja") }}
+              <br />
+              {{ $t("text.tanja") }}
             </span>
             <p class="mt-4 text-gray-500 leading-relaxed">👨🏻‍🎤</p>
           </div>
@@ -189,7 +115,8 @@
             <h3 class="text-xl font-heading">Andreas Koutsoukos</h3>
             <span>
               {{ $t("text.volunteering") }}
-              <br />{{ $t("text.andreas") }}
+              <br />
+              {{ $t("text.andreas") }}
             </span>
             <p class="mt-4 text-gray-500 leading-relaxed">💻</p>
           </div>
@@ -202,7 +129,8 @@
             <h3 class="text-xl font-heading">Saija Viitala</h3>
             <span>
               {{ $t("text.volunteering") }}
-              <br />{{ $t("text.saija") }}
+              <br />
+              {{ $t("text.saija") }}
             </span>
             <p class="mt-4 text-gray-500 leading-relaxed">📝</p>
           </div>
@@ -215,7 +143,8 @@
             <h3 class="text-xl font-heading">Jussi Korhonen</h3>
             <span>
               {{ $t("text.volunteering") }}
-              <br />{{ $t("text.jussi") }}
+              <br />
+              {{ $t("text.jussi") }}
             </span>
             <p class="mt-4 text-gray-500 leading-relaxed">💪🏻</p>
           </div>
@@ -224,9 +153,7 @@
           <a
             href="mailto:saisinko.apua@gmail.com?subject=Yhdenotto"
             class="w-full sm:w-auto font-display font-semibold text-md sm:text-lg text-center bg-primary text-white rounded-full py-3 px-6 mt-4 inline-block"
-          >
-            {{ $t("text.helping") }}</a
-          >
+          >{{ $t("text.helping") }}</a>
           <div class="font-light text-spaceblue-300 text-sm"></div>
         </div>
       </div>
@@ -236,9 +163,7 @@
         <div class="container mx-auto sm:mt-40 sm:my-16 sm:py-16">
           <div class="flex justify-center flex-wrap">
             <div class="sm:block w-full md:flex-1 relative mb-16 md:mb-0">
-              <div
-                class="w-full sm:w-1/2 mb-2 p-4 relative z-30 xl:px-4 float-left"
-              >
+              <div class="w-full sm:w-1/2 mb-2 p-4 relative z-30 xl:px-4 float-left">
                 <div
                   class="rounded-lg bg-white px-3 lg:px-6 xl:px-8 py-8 xl:py-16 text-center shadow-lg border border-gray-100 sm:mt-32"
                 >
@@ -256,34 +181,26 @@
                   </p>
                 </div>
               </div>
-              <div
-                class="w-full sm:w-1/2 mb-2 p-4 relative z-30 sm:pl-6 xl:pl-8 float-left"
-              >
+              <div class="w-full sm:w-1/2 mb-2 p-4 relative z-30 sm:pl-6 xl:pl-8 float-left">
                 <div
                   class="rounded-lg bg-white px-3 lg:px-6 xl:px-12 py-8 xl:py-16 text-center shadow-lg border border-gray-100"
                 >
-                  <h4 class="text-gray-800 font-bold text-2xl mt-6">
-                    {{ $t("text.helpingEnterpise") }}
-                  </h4>
+                  <h4
+                    class="text-gray-800 font-bold text-2xl mt-6"
+                  >{{ $t("text.helpingEnterpise") }}</h4>
                 </div>
               </div>
             </div>
             <div class="flex-1 flex flex-col justify-center z-30 ml-0 md:ml-12">
               <h3
                 class="text-gray-800 font-bold text-xl sm:text-3xl lg:text-4xl xl:text-5xl pr-0 lg:pr-8 text-gray-800 font-bold ml-6 mr-6 sm:mr-0 leading-tight"
-              >
-                {{ $t("text.coWorkers") }}
-              </h3>
+              >{{ $t("text.coWorkers") }}</h3>
               <h4
                 class="ml-6 mt-4 sm:mt-8 mr-6 sm:mr-0 text-sm lg:text-xl xl:text-2xl font-hairline sm:font-medium lg:font-normal text-custom-purple"
-              >
-                ...
-              </h4>
+              >...</h4>
               <p
                 class="ml-6 mt-4 sm:mt-8 mr-6 sm:mr-0 text-sm sm:text-lg xl:text-xl text-gray-600"
-              >
-                ...
-              </p>
+              >...</p>
             </div>
           </div>
         </div>
@@ -293,12 +210,17 @@
 </template>
 
 <script>
+import Navigation from "~/components/Navigation.vue";
 export default {
   data() {
     return {
       formData: {},
-      locale: (this.$i18n.locale = this.$route.path.split("/")[1])
+      locale: (this.$i18n.locale = this.$route.path.split("/")[1]),
+      localeUpdate: ""
     };
+  },
+  components: {
+    Navigation
   },
   props: {
     submitText: {
@@ -354,12 +276,6 @@ export default {
   async mounted() {
     this.$i18n.locale = this.$route.path.split("/")[1];
   },
-  watch: {
-    locale(val) {
-      this.$i18n.locale = val;
-      this.$router.push({ path: `/${val}` });
-    }
-  },
   methods: {
     encode(data) {
       return Object.keys(data)
@@ -383,6 +299,9 @@ export default {
         })
         .catch(error => alert(error));
     }
+  },
+  locale(value) {
+    this.$i18n.locale = value;
   }
 };
 </script>
