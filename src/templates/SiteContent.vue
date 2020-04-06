@@ -215,8 +215,7 @@ export default {
   data() {
     return {
       formData: {},
-      locale: (this.$i18n.locale = this.$route.path.split("/")[1]),
-      localeUpdate: ""
+      locale: (this.$i18n.locale = this.$route.path.split("/")[1])
     };
   },
   components: {
@@ -298,10 +297,11 @@ export default {
           this.submitText = "Kiitos 👍🏻";
         })
         .catch(error => alert(error));
+    },
+
+    localeUpdate(value) {
+      this.$i18n.locale = value;
     }
-  },
-  locale(value) {
-    this.$i18n.locale = value;
   }
 };
 </script>

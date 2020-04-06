@@ -26,7 +26,7 @@
             $t("text.localeLink")
             }}
           </label>
-          <select @change="onChange($event)">
+          <select v-model="locale">
             <option value="fi">fi</option>
             <option value="en">en</option>
           </select>
@@ -42,19 +42,15 @@ export default {
   name: "Navigation",
   data() {
     return {
-      //locale: (this.$i18n.locale = this.$route.path.split("/")[1]),
-      key: ""
+      locale: (this.$i18n.locale = this.$route.path.split("/")[1])
     };
   },
   i18n: {
     messages: messages
   },
-  watch: {},
-  methods: {
-    onChange(event) {
-      console.log(event.target.value);
-
-      this.$emit("clicked", event.target.value);
+  watch: {
+    locale(value) {
+      this.$emit("clicked", value);
     }
   }
 };
