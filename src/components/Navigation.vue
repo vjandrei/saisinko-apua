@@ -51,6 +51,7 @@ export default {
   watch: {
     locale(value) {
       this.$emit("clicked", value);
+      this.$router.push({ path: `/${value}` });
     }
   }
 };
