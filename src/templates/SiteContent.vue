@@ -62,6 +62,18 @@
         </section>
       </div>
     </section>
+    <section>
+      <div class="container mx-auto">
+        <iframe
+          width="100%"
+          height="400px"
+          src="https://www.youtube.com/embed/be-eoGg0vmE"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
     <Form />
     <section id="about" class="my-4 sm:my-12">
       <div class="bg-gray-100">
@@ -197,7 +209,7 @@
               >{{ $t("text.coWorkers") }}</h3>
               <h4
                 class="ml-6 mt-4 sm:mt-8 mr-6 sm:mr-0 text-sm lg:text-xl xl:text-2xl font-hairline sm:font-medium lg:font-normal text-custom-purple"
-              >...</h4>
+              >Etsimme yhteistyökumppaneita toteuttamaan postitusta ja logistiikkaa.</h4>
               <p
                 class="ml-6 mt-4 sm:mt-8 mr-6 sm:mr-0 text-sm sm:text-lg xl:text-xl text-gray-600"
               >...</p>
