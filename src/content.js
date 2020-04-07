@@ -2,7 +2,9 @@ export default {
   fi: {
     text: {
       hello: "Moikka Maailma!",
-      formLink: "Tilauslomake (tulossa)",
+      formLink: "Ennakkotilaa kyltti",
+      formSign:
+        "Emme valitettavasti vielä pysty postittamaan kylttejä, mutta voi jättää ennakkotilauksen kylteistä.",
       printLink: "Tulosta",
       about: "Mistä on kyse?",
       localeLink: "Kieli",
@@ -30,13 +32,23 @@ export default {
       jussi: "Palvelumuotoilija",
       helping: "Autamme mielellämme",
       helpingEnterpise: "Miten sinun yrityksesi voisi auttaa?",
-      coWorkers: "Yhteystyökumppanit"
-    }
+      coWorkers: "Yhteystyökumppanit",
+      formName: "Nimi",
+      formAddress: "Katuosoite",
+      formPostnumber: "Postinumero",
+      formCity: "Kaupunki",
+      formOrder: "Määrä",
+      formLaunguage: "Haluan laput kielellä",
+      formSend: "Lähetä lomake",
+      formThanks: "Kiitos 👍🏻",
+    },
   },
   en: {
     text: {
       hello: "Hello World!!",
-      formLink: "Order Form (coming soon)",
+      formLink: "Pre-order sign",
+      formSign:
+        "Unfortunately, we are not yet able to post signs, but can pre-order signs.",
       printLink: "Print",
       about: "What is this about?",
       localeLink: "Launguage",
@@ -64,7 +76,15 @@ export default {
       jussi: "Service designer",
       helping: "We will be happy to help",
       helpingEnterpise: "How could your business help us?",
-      coWorkers: "Co-workers"
-    }
-  }
+      coWorkers: "Co-workers",
+      formName: "Name",
+      formAddress: "Address",
+      formPostnumber: "Postnumber",
+      formCity: "City",
+      formOrder: "Number",
+      formLaunguage: "I want sign in ",
+      formSend: "Send form",
+      formThanks: "Thanks 👍🏻",
+    },
+  },
 };

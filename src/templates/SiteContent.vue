@@ -62,7 +62,7 @@
         </section>
       </div>
     </section>
-
+    <Form />
     <section id="about" class="my-4 sm:my-12">
       <div class="bg-gray-100">
         <div class="container mx-auto">
@@ -211,22 +211,16 @@
 
 <script>
 import Navigation from "~/components/Navigation.vue";
+import Form from "~/components/Form.vue";
 export default {
   data() {
     return {
-      formData: {},
       locale: (this.$i18n.locale = this.$route.path.split("/")[1])
     };
   },
   components: {
-    Navigation
-  },
-  props: {
-    submitText: {
-      type: String,
-      required: false,
-      default: "Lähetä lomake"
-    }
+    Navigation,
+    Form
   },
   metaInfo: {
     title: "Lappu oveen ja anna naapurin auttaa!",
@@ -276,29 +270,6 @@ export default {
     this.$i18n.locale = this.$route.path.split("/")[1];
   },
   methods: {
-    encode(data) {
-      return Object.keys(data)
-        .map(
-          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-        )
-        .join("&");
-    },
-    handleSubmit(e) {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: this.encode({
-          "form-name": e.target.getAttribute("name"),
-          ...this.formData
-        })
-      })
-        .then(() => {
-          this.formData = "";
-          this.submitText = "Kiitos 👍🏻";
-        })
-        .catch(error => alert(error));
-    },
-
     localeUpdate(value) {
       this.$i18n.locale = value;
     }
