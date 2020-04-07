@@ -40,7 +40,7 @@ export default {
       formOrder: "Määrä",
       formLaunguage: "Haluan laput kielellä",
       formSend: "Lähetä lomake",
-      formThanks: "Kiitos 👍🏻",
+      formThanks: "Kiitos 👍🏻, lomake on lähetetty",
     },
   },
   en: {
@@ -84,7 +84,7 @@ export default {
       formOrder: "Number",
       formLaunguage: "I want sign in ",
       formSend: "Send form",
-      formThanks: "Thanks 👍🏻",
+      formThanks: "Thanks 👍🏻 form has send",
     },
   },
 };

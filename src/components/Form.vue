@@ -160,11 +160,7 @@
                 <button
                   class="w-full sm:w-auto font-display font-semibold text-md sm:text-lg text-center bg-primary text-white rounded-full py-3 px-6 mt-4 inline-block"
                   type="submit"
-                >
-                  {{
-                  $t("text.formSend")
-                  }}
-                </button>
+                >{{ this.submitText }}</button>
               </div>
             </form>
           </div>
@@ -182,7 +178,8 @@ export default {
   data: function() {
     return {
       formData: {},
-      fromSubmitText: this.$i18n.t("text.formThanks")
+      fromSubmitText: this.$i18n.t("text.formThanks"),
+      submitText: this.$i18n.t("text.formSend")
     };
   },
   i18n: {
@@ -207,7 +204,7 @@ export default {
       })
         .then(() => {
           this.formData = "";
-          this.submitText = this.fromSubmitText;
+          this.submitText = this.$i18n.t("text.formThanks");
         })
         .catch(error => alert(error));
     }
