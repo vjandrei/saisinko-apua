@@ -2,9 +2,9 @@ export default {
   fi: {
     text: {
       hello: "Moikka Maailma!",
-      formLink: "Ennakkotilaa kyltti",
+      formLink: "Ryhdy kylttilähettilääksi",
       formSign:
-        "Emme valitettavasti vielä pysty postittamaan kylttejä, mutta voi jättää ennakkotilauksen kylteistä.",
+        "Saisinko apua kylttilähettiläänä autat jakamaan kylttejä omalla alueellasi, jotta kyltit tavoittavat apua tarvitsevan. Lähettiläs voi olla kuka tahansa.  Täytä alla oleva lomake. Saat meiltä paketin, joka sisältää kyltit.",
       printLink: "Tulosta",
       about: "Mistä on kyse?",
       localeLink: "Kieli",
@@ -47,9 +47,9 @@ export default {
   en: {
     text: {
       hello: "Hello World!!",
-      formLink: "Pre-order sign",
+      formLink: "Become a sign ambassador",
       formSign:
-        "Unfortunately, we are not yet able to post signs, but can pre-order signs.",
+        "As sign ambassador you will help distribute the signs in your area so that the signs reach the person in need. Signs ambassador can be anyone. Fill out the form below. You will receive a package from us that includes signs.",
       printLink: "Print",
       about: "What is this about?",
       localeLink: "Launguage",

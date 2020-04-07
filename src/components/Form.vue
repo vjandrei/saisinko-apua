@@ -10,7 +10,7 @@
                 $t("text.formLink")
                 }}
               </h2>
-              <h3 class="font-display font-semibold text-xl text-secondary mb-4">
+              <h3 class="font-display font-normal text-lg sm:text-xl text-gray-900 mb-6 mb-4">
                 {{
                 $t("text.formSign")
                 }}
@@ -90,23 +90,6 @@
                   required
                   class="form-input mt-1 block w-full"
                   placeholder="Kaupunki"
-                />
-              </label>
-
-              <label class="block mb-4">
-                <span class="font-display font-semibold text-primary">
-                  {{
-                  $t("text.formOrder")
-                  }}
-                </span>
-                <input
-                  v-model="formData.piece"
-                  aria-label="Määrä"
-                  name="piece"
-                  type="number"
-                  required
-                  class="form-input mt-1 block w-full"
-                  placeholder="Kpl"
                 />
               </label>
 
