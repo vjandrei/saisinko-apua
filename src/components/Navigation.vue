@@ -21,6 +21,13 @@
           <a href="#about" class="font-semibold relative nav-link">{{ $t("text.about") }}</a>
         </div>
         <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
+          <a
+            href="https://www.facebook.com/Saisinko-apua-106226777711374"
+            target="_black"
+            class="font-semibold relative nav-link"
+          >{{ $t("text.facebookLink") }}</a>
+        </div>
+        <div class="p-2 mx-2 cursor-pointer inline-block" role="button">
           <label for="locale" class="font-semibold relative nav-link mr-3">
             {{
             $t("text.localeLink")

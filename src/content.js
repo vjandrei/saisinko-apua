@@ -8,6 +8,7 @@ export default {
       printLink: "Tulosta",
       about: "Mistä on kyse?",
       localeLink: "Kieli",
+      facebookLink: "Facebook",
       heading: "Saisinko apua?",
       ingress:
         "Suojellaksemme ihmisiä ympärillämme haluamme varmistaa, ettei kenenkään riskiryhmään kuuluvan tarvitsisi altistua virukselle saadakseen ruokaa tai lääkkeitä. Uskomme kanssaihmisten hyvyyteen. Anna naapurin auttaa!",
@@ -52,6 +53,7 @@ export default {
       printLink: "Print",
       about: "What is this about?",
       localeLink: "Launguage",
+      facebookLink: "Facebook",
       heading: "Can I please have some help?",
       ingress:
         "We want to protect the people around us by helping them. Anyone who is in a risk group  shouldn’t have to expose themselves to the virus just  to get food or medicine. We believe in the goodness of human beings. Let your neighbors help you!",
