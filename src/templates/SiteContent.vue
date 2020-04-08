@@ -179,18 +179,43 @@
                 <div
                   class="rounded-lg bg-white px-3 lg:px-6 xl:px-8 py-8 xl:py-16 text-center shadow-lg border border-gray-100 sm:mt-32"
                 >
-                  <img
-                    class="mx-auto w-full xl:w-48"
-                    src="https://www.grano.fi/hs-fs/hubfs/Identity/Logot/grano-logo-oranssi.png?width=208&name=grano-logo-oranssi.png"
-                    alt="Logo"
-                  />
+                  <a href="https://www.grano.fi/" target="_black">
+                    <img
+                      class="mx-auto w-full xl:w-48"
+                      src="https://www.grano.fi/hs-fs/hubfs/Identity/Logot/grano-logo-oranssi.png?width=208&name=grano-logo-oranssi.png"
+                      alt="Logo"
+                    />
+                  </a>
 
-                  <h4 class="text-gray-800 font-bold text-2xl mt-6">Grano</h4>
+                  <h4 class="text-gray-800 font-bold text-2xl mt-6">
+                    <a href="https://www.grano.fi/" target="_black">Grano</a>
+                  </h4>
+                  <h5 class="text-gray-600 font-semibold text-sm mt-1">Yhteistyökumppani</h5>
                   <p class="text-gray-600 mt-6 block md:hidden lg:block">
                     Grano on Suomen monipuolisin sisältöpalvelujen osaaja.
                     Toteutamme asiakkaan myyntiä, brändiä ja tulosta edistäviä
                     markkinoinnin ja viestinnän ratkaisuja digistä printtiin.
                   </p>
+                </div>
+              </div>
+              <div class="w-full sm:w-1/2 mb-2 p-4 relative z-30 sm:pl-6 xl:pl-8 float-left">
+                <div
+                  class="rounded-lg bg-white px-3 lg:px-6 xl:px-12 py-8 xl:py-16 text-center shadow-lg border border-gray-100"
+                >
+                  <a href="http://janikaviihde.fi/" target="_black">
+                    <img
+                      class="mx-auto w-16 sm:w-16"
+                      src="http://janikaviihde.fi/images/jn.png?crc=4281015021"
+                      alt="Logo"
+                    />
+                  </a>
+                  <h4 class="text-gray-800 font-bold text-2xl mt-6">
+                    <a href="http://janikaviihde.fi/" target="_black">Janika Viihde</a>
+                  </h4>
+                  <h5 class="text-gray-600 font-semibold text-sm mt-1">Kylttilähettiläs</h5>
+                  <p
+                    class="text-gray-600 mt-6 block md:hidden lg:block"
+                  >Meiltä saat avaimet käteen paketin, eli tarvittaessa voimme varata tapahtumaasi tilan, tuottaa sen ja hoitaa itse tilaisuuden paikan päällä. Otamme mieluusti vastaan myös sairastapaus tai lomasijaisuus -keikkoja nopeallakin aikataululla</p>
                 </div>
               </div>
               <div class="w-full sm:w-1/2 mb-2 p-4 relative z-30 sm:pl-6 xl:pl-8 float-left">
