@@ -202,15 +202,15 @@
                 <div
                   class="rounded-lg bg-white px-3 lg:px-6 xl:px-12 py-8 xl:py-16 text-center shadow-lg border border-gray-100"
                 >
-                  <a href="http://janikaviihde.fi/" target="_black">
+                  <a href="https://www.janikaviihde.fi/" target="_black">
                     <img
                       class="mx-auto w-16 sm:w-16"
-                      src="http://janikaviihde.fi/images/jn.png?crc=4281015021"
+                      src="https://www.janikaviihde.fi/images/jn.png?crc=4281015021"
                       alt="Logo"
                     />
                   </a>
                   <h4 class="text-gray-800 font-bold text-2xl mt-6">
-                    <a href="http://janikaviihde.fi/" target="_black">Janika Viihde</a>
+                    <a href="https://www.janikaviihde.fi/" target="_black">Janika Viihde</a>
                   </h4>
                   <h5 class="text-gray-600 font-semibold text-sm mt-1">Kylttilähettiläs</h5>
                   <p
