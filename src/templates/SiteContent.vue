@@ -200,7 +200,7 @@
               </div>
               <div class="w-full sm:w-1/2 mb-2 p-4 relative z-30 sm:pl-6 xl:pl-8 float-left">
                 <div
-                  class="rounded-lg bg-white px-3 lg:px-6 xl:px-12 py-8 xl:py-16 text-center shadow-lg border border-gray-100"
+                  class="rounded-lg bg-white px-3 lg:px-6 xl:px-4 py-8 xl:py-16 text-center shadow-lg border border-gray-100"
                 >
                   <a href="https://www.janikaviihde.fi/" target="_black">
                     <img
@@ -213,9 +213,14 @@
                     <a href="https://www.janikaviihde.fi/" target="_black">Janika Viihde</a>
                   </h4>
                   <h5 class="text-gray-600 font-semibold text-sm mt-1">Kylttilähettiläs</h5>
-                  <p
-                    class="text-gray-600 mt-6 block md:hidden lg:block"
-                  >Meiltä saat avaimet käteen paketin, eli tarvittaessa voimme varata tapahtumaasi tilan, tuottaa sen ja hoitaa itse tilaisuuden paikan päällä. Otamme mieluusti vastaan myös sairastapaus tai lomasijaisuus -keikkoja nopeallakin aikataululla</p>
+                  <p class="text-gray-600 mt-6 block md:hidden lg:block">
+                    Janika Viihde & Hyvinvointi yrityksen kautta voit tilata Korona -tilanteeseen sopivaa palvelua tai apua.
+                    <a
+                      href="https://janikaviihde.fi/"
+                      target="_black"
+                      class="w-full sm:w-auto font-display font-semibold text-center bg-primary text-white rounded-full py-3 px-6 mt-4 inline-block"
+                    >Lue lisää</a>
+                  </p>
                 </div>
               </div>
               <div class="w-full sm:w-1/2 mb-2 p-4 relative z-30 sm:pl-6 xl:pl-8 float-left">
